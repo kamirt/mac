@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style>.cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #7ee6ff;
+        stroke-miterlimit: 10;
+      }</style>
+ </defs>
+ <g fill="none" stroke="#7ee6ff" stroke-miterlimit="10">
+  <path class="cls-2" d="m6 0v4a2.006 2.006 0 0 1-2 2h-4" data-name="Path 796"/>
+  <path class="cls-2" d="m0 11h4a2.006 2.006 0 0 1 2 2v4" data-name="Path 797"/>
+  <path class="cls-2" d="m11 0v4a2.006 2.006 0 0 0 2 2h4" data-name="Path 798"/>
+  <path class="cls-2" d="m17 11h-4a2.006 2.006 0 0 0-2 2v4" data-name="Path 799"/>
+ </g>
+</svg>

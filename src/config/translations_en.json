@@ -1,0 +1,21 @@
+{
+  "globals": {
+    "fly": "fly",
+    "controls": "controls",
+    "special_options": "special options"
+  },
+  "system_menu": {
+    "news": "news",
+    "video": "video",
+    "forum": "forum",
+    "support": "support",
+    "shop": "shop"
+  },
+  "main_menu": {
+    "singleplayer": "singleplayer",
+    "multiplayer": "multiplayer",
+    "aircraft_settings": "aircraft settings",
+    "game_settings": "game settings",
+    "exit": "exit"
+  }
+}

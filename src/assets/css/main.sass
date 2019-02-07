@@ -1,0 +1,55 @@
+@import './mixins.sass'
+@import './animations.sass'
+// variables
+$blue: #7EE6FF
+$orange: #FFC364
+$base: #2F6186
+$grid-columns: 16
+$grid-gutter-width: 20px
+$side-margin: 4.1625vw
+*
+  user-drag: none
+  user-select: none
+html, body
+  margin: 0
+  height: 100%
+  font-family: 'Roboto', sans-serif
+  color: #ffffff
+  overflow: hidden
+ul
+  list-style: none
+  padding: 0
+a
+  text-decoration: none
+  color: inherit
+p
+  margin: 0
+h1
+  @include make-font('Roboto', 100)
+  font-size: calcsize(75)
+  white-space: nowrap
+  text-transform: uppercase
+  margin: 0
+  margin-left: calcsize(-80)
+  padding-top: calcsize(210)
+#app
+  height: 100%
+  position: relative
+.row
+  padding: 0
+.space-no-wrap
+  white-space: nowrap
+.align-center
+  align-items: center
+.router-back
+  cursor: pointer
+  color: $blue
+  margin-top: calcsize(110)
+  & h2
+    @include make-font('Roboto', 18)
+    font-size: calcsize(18)
+    text-transform: capitalize
+  &:hover
+    color: #ffffff
+    & svg
+      stroke: #ffffff

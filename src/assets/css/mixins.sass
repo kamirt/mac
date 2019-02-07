@@ -1,0 +1,10 @@
+@mixin make-font($family, $thin-number)
+  font-family: $family, sans-serif
+  font-weight: $thin-number
+
+
+@function calcsize($pixel-size)
+  @return $pixel-size / 16 * 0.9 * 1vw
+
+@function calcheight($pixel-size)
+  @return $pixel-size / 16 * 0.9 * 1vh

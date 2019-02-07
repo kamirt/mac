@@ -1,0 +1,21 @@
+{
+  "globals": {
+    "fly": "полёт",
+    "controls": "управление",
+    "special_options": "специальные настройки"
+  },
+  "system_menu": {
+    "news": "новости",
+    "video": "видео",
+    "forum": "форум",
+    "support": "поддержка",
+    "shop": "магазин"
+  },
+  "main_menu": {
+    "singleplayer": "одиночная игра",
+    "multiplayer": "мультиплеер",
+    "aircraft_settings": "настройки самолета",
+    "game_settings": "настройки игры",
+    "exit": "выход"
+  }
+}

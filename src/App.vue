@@ -1,29 +1,46 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+  div(id="app", class="app-container", onselectstart="return false")
+    system-menu
+    profile
+    main-menu
+    div(v-if="this.$route.name==='home'", class="vehicles", onselectstart="return false")
+      vehicle-menu
+    transition(name="fade")
+      router-view
 </template>
+<script>
+import mainMenu from '@/components/menus/mainMenu'
+import systemMenu from '@/components/menus/systemMenu'
+import vehicleMenu from '@/components/menus/vehicleMenu'
+import profile from '@/components/profile/Profile'
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: {
+    mainMenu,
+    systemMenu,
+    vehicleMenu,
+    profile
+  },
+  data () {
+    return {
+      isHome: true
     }
   }
 }
+</script>
+<style lang="sass">
+  @import './assets/css/fonts'
+  @import './assets/css/lib/bootstrap/bootstrap-grid.scss'
+
+  body
+   background: url('./assets/img/backgrounds/home-back.png') center/cover, #000
+
+  .app-container
+    margin: calcsize(33) $side-margin
+  .vehicles
+    position: absolute
+    bottom: 0
+    right: calcsize(-74)
+    width: 80vw
+    z-index: 1
 </style>

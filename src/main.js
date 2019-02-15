@@ -17,7 +17,6 @@ Vue.component('svg-icon', svgIcon)
 
 let locale = determineLocale()
 Vue.prototype.$content = require(`./config/translations_${locale}.json`)
-
 new Vue({
   router,
   store,

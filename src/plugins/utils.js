@@ -1,5 +1,13 @@
 const Utils = {
   install (Vue, options) {
+    Vue.directive('visible', (el, binding) => {
+      var value = binding.value
+      if (value) {
+        el.style.visibility = 'visible'
+      } else {
+        el.style.visibility = 'hidden'
+      }
+    })
     Vue.prototype.$utils = {
       monthList: {
         en: ['JAN', 'FEB', 'MAR',
@@ -42,13 +50,9 @@ const Utils = {
         } else {
           elArr = el
         }
-        for (let i = 0; i< elArr.length; i++) {
-          if (!elArr[i].className) return ''
+        for (let i = 0; i < elArr.length; i++) {
+          if (!elArr[i].className) return
           const classArr = elArr[i].className.split(' ')
-          if (classArr.length < 2) {
-            elArr[i].className = ''
-            return ''
-          }
           elArr[i].className = classArr.filter((cl) => cl !== clName).join(' ')
         }
       }

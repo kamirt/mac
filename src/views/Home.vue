@@ -41,8 +41,8 @@ export default {
     position: relative
     &-news-block
       position: absolute
-      right: calcsize(-75)
+      right: 0
       top: 30%
       width: 24.075vw
-      height: 12.037vw
+      height: 10.84vw
 </style>

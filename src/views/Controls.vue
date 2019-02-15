@@ -62,7 +62,7 @@ export default {
   },
   computed: {
     headers () {
-      return Object.keys(this.state.config[0])
+      return this.state.config.length ? Object.keys(this.state.config[0]) : []
     },
     state () {
       return this.$store.state.controls
@@ -75,10 +75,37 @@ export default {
       editingRow: {}
     }
   },
+  created () {
+    this.$edQuery({
+      request: {
+        method: 'getControls'
+      },
+      success: (e) => {
+        this.$store.commit('SET_CONFIG', e)
+      },
+      failure (error) {
+        console.log(error.message)
+      }
+    })
+    this.$edQuery({
+      request: {
+        method: 'getControlsCategories'
+      },
+      success: (e) => {
+        this.$store.commit('SET_CATEGORIES', e)
+      },
+      failure (error) {
+        console.log(error.message)
+      }
+    })
+  },
   methods: {
     getValue (key, val) {
       if (!val) return ''
-      if (key === 'category') return this.state[key].filter(el => el.id === val)[0].name
+      if (key === 'category') {
+        let res = this.state[key].filter(el => el.id === val)[0]
+        return res && res.name
+      }
       if (key === 'action set') return val
       return this.state[key] ? this.state[key].filter(el => el.code === val)[0].key : 'none'
     },
@@ -212,7 +239,7 @@ export default {
       transition: background .2s
       &--filters
         background: rgba(0, 0, 0, .1)
-        border: 1px solid rgba(255, 255, 255, .35)
+        border: 1px solid rgba(126, 230, 255, .35)
         border-right: none
         border-left: none
         font-size: calcsize(18)
@@ -232,7 +259,7 @@ export default {
       &--headers
         text-transform: uppercase
         font-size: calcsize(12)
-        color: rgba(255, 255, 255, .35)
+        color: rgba(126, 230, 255, 0.35)
   .highlighted:not(.grid__cell--hovered)
     background: rgba(255, 255, 255, .15)
   .editable

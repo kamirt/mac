@@ -17,7 +17,7 @@ export default {
     const content = this.$content['main_menu']
     return {
       hidden: false,
-      content: content,
+      content: content
     }
   },
   watch: {
@@ -38,10 +38,10 @@ export default {
 
 <style lang="sass">
   .main-menu
-    @include make-font('Roboto Condensed', regular)
+    @include make-font('Roboto Condensed', 300)
     color: $blue
     position: absolute
-    bottom: 30px
+    bottom: 5%
     text-transform: capitalize
     font-size: calcsize(20)
     z-index: 3
@@ -63,9 +63,10 @@ export default {
       left: -$side-margin
       z-index: 3
       cursor: pointer
-  .svg-icon--hamburger
-    width: 8%
-    fill: $blue!important
-    &:hover
-      fill: white!important
+  .svg-icon--common
+    &.svg-icon--hamburger
+      width: 25px
+      fill: $blue!important
+      &:hover
+        fill: white!important
 </style>

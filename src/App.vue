@@ -3,7 +3,7 @@
     system-menu
     profile
     main-menu
-    div(v-if="this.$route.name==='home'", class="vehicles", onselectstart="return false")
+    div(v-if="this.$route.name==='home'", class="offset-4 vehicles", onselectstart="return false")
       vehicle-menu
     transition(name="fade")
       router-view
@@ -26,6 +26,7 @@ export default {
       isHome: true
     }
   }
+
 }
 </script>
 <style lang="sass">
@@ -39,8 +40,7 @@ export default {
     margin: calcsize(33) $side-margin
   .vehicles
     position: absolute
-    bottom: 0
-    right: calcsize(-74)
-    width: 80vw
+    bottom: 5%
+    width: 80%
     z-index: 1
 </style>

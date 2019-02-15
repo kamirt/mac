@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Environment System",
+    "id": 1
+  },
+  {
+   "name": "Flight Control",
+    "id": 2
+  },
+  {
+    "name": "Targeting",
+    "id": 3
+  }
+]

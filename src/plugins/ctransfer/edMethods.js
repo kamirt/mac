@@ -1,3 +1,6 @@
+import controlConfig from './warehouse/config.json'
+import categories from './warehouse/confCategory.json'
+
 export default {
   getMaps () {
     return [
@@ -22,6 +25,12 @@ export default {
   startMission (aircraftId, missionId) {
     return { success: true }
   },
+  getControls () {
+    return controlConfig
+  },
+  getControlsCategories () {
+    return categories
+  },
   getVehicleList () {
     return {
       data: {
@@ -31,7 +40,7 @@ export default {
             id: 1,
             name: 'A-10A',
             image: require('@/assets/img/temp/A-10A_corona_v3.png'),
-            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
+            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles. lalalalalallalala lalalalala lalalalala allalalalalal'
           },
           {
             id: 2,

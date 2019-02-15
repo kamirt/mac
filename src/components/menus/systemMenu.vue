@@ -50,7 +50,7 @@ export default {
     z-index: 3
     justify-content: flex-start!important
   .system-menu
-    @include make-font('Roboto', bold)
+    @include make-font('Roboto', 400)
     display: flex
     text-transform: uppercase
     font-size: calcsize(16)
@@ -87,7 +87,7 @@ export default {
   .logo-container
     margin-top: 17%
     width: 100%
-    min-height: 260px
+    min-height: 280px
     background: url("../../assets/img/backgrounds/modern_air_combat_logo.svg") center/100%
     background-repeat: no-repeat
   #home-icon

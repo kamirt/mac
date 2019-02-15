@@ -40,7 +40,7 @@ export default {
 <style lang="sass">
   .profile
     position: absolute
-    right: calcsize(-50)
+    right: -3vw
     top: calcsize(-10)
     z-index: 2
     &__link
@@ -53,5 +53,5 @@ export default {
       height: calcsize(40)
       background-size: cover
       border-radius: 5px
-      margin-left: 20px
+      margin-left: calcsize(20)
 </style>

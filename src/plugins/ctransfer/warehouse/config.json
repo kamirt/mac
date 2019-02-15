@@ -1,0 +1,83 @@
+[
+  {
+    "action set": "Absolute Camera Vertical View",
+    "category": 1,
+    "keyboard": 3,
+    "saitek pro-flight 1": 2,
+    "saitek pro-flight 2": null,
+    "mouse": null,
+    "mouse2": 1
+  },
+  {
+    "action set": "Camera Zoom View",
+    "category": 2,
+    "keyboard": 8,
+    "saitek pro-flight 1": 1,
+    "saitek pro-flight 2": null,
+    "mouse": null,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View1",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View2",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View3",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View4",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View5",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  },
+  {
+    "action set": "Radar View6",
+    "category": 3,
+    "keyboard": 13,
+    "saitek pro-flight 1": 6,
+    "saitek pro-flight 2": null,
+    "mouse": 4,
+    "mouse2": 1
+  }
+]

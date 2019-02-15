@@ -14,6 +14,7 @@ html, body
   margin: 0
   height: 100%
   font-family: 'Roboto', sans-serif
+  letter-spacing: .5px
   color: #ffffff
   overflow: hidden
 ul
@@ -44,7 +45,9 @@ h1
 .router-back
   cursor: pointer
   color: $blue
-  margin-top: calcsize(110)
+  margin-top: 3.5vw
+  & svg
+    stroke: none
   & h2
     @include make-font('Roboto', 18)
     font-size: calcsize(18)
@@ -52,4 +55,6 @@ h1
   &:hover
     color: #ffffff
     & svg
-      stroke: #ffffff
+      fill: #ffffff
+.svg-icon--common
+  width: 50px

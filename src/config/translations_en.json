@@ -2,7 +2,15 @@
   "globals": {
     "fly": "fly",
     "controls": "controls",
-    "special_options": "special options"
+    "special_options": "special options",
+    "search": "search"
+  },
+  "missions": {
+    "campaign": "campaign",
+    "mission_generator": "mission generator",
+    "mission": "mission",
+    "training": "training",
+    "continue_current": "continue_current_campaign"
   },
   "system_menu": {
     "news": "news",

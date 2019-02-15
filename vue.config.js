@@ -40,5 +40,13 @@ module.exports = {
         ]
         return options
       })
+    config.module
+      .rule('images')
+      .test(/\.(png|jpe?g|gif|webp|mp4|m4v|avi)(\?.*)?$/)
+      .use('url-loader')
+      .loader('url-loader')
+      .tap(options => {
+        return options
+      })
   }
 }

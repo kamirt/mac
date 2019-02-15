@@ -68,42 +68,26 @@ export default {
       position: absolute
       width: 100%
       height: 100%
-      position: absolute
       content: ''
-      width: 100%
-      height: 100%
-      background-image: url('../../assets/img/backgrounds/dot_grid_blue.svg')
-      background-size: auto
+      background-size: 3.5%
       opacity: .7
       z-index: 0
       &:before
         content: ''
+        background-image: url('../../assets/img/backgrounds/news_frame.svg')
+        opacity: .35
+        background-repeat: no-repeat
+        background-size: 100%
         position: absolute
-        width: 10px
-        height: 10px
-        top: -1px
-        left: -1px
-        border-top: 1px solid
-        border-left: 1px solid
-        border-color: rgba(126, 230, 255, .5)
-        border-radius: 4px 0 0 0
-      &:after
-        content: ''
-        position: absolute
-        width: 10px
-        height: 10px
-        bottom: -1px
-        left: -1px
-        border-bottom: 1px solid
-        border-left: 1px solid
-        border-color: rgba(126, 230, 255, .5)
-        border-radius: 0 0 0 4px
+        width: 100%
+        height: 100%
     &__date
       @include make-font('Roboto Condensed', 100)
       color: $orange
       padding: 15px
     &__text
       font-size: .79vw
+      font-weight: 300
       color: $blue
       display: flex
       align-items: center
@@ -115,13 +99,14 @@ export default {
       font-size: calcsize(32)
       margin-top: -10px
   .news-block__toggle
+    cursor: pointer
     display: block
     position: absolute
-    width: 17px
-    height: 17px
-    right: 20px
-    top: 17px
-    opacity: .5
+    width: 13px
+    height: 13px
+    right: 0
+    top: 0
+    opacity: .35
     transition: opacity .2s
     z-index: 3
     &:hover
@@ -130,6 +115,5 @@ export default {
       width: 100%
       height: 100%
   .svg-icon--news_hide
-    stroke: $blue
-    fill: none!important
+    fill: $blue!important
 </style>

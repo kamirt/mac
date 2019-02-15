@@ -1,7 +1,13 @@
 <template lang="pug">
   div(class="input-select", @mouseleave="onMouseLeave")
     div(class="input-select__container")
-      input(class="input-select__selected", @click="onClick", v-model="val")
+      span(v-if="!val", class="input-select__search")
+        svg-icon(name="search")
+      input(:placeholder="$content.globals.search",
+        class="input-select__selected",
+        @click="onClick",
+        @focus="listenKeyboard",
+        v-model="val")
       ul(ref="options",
          :class="{ 'is-blured': blured }",
          class="input-select__options",
@@ -72,7 +78,7 @@ export default {
       return
     }
     this.selected = this.items[this.selectedIndex]
-    this.val = this.selected[this.name]
+    this.val = this.selected ? this.selected[this.name] : ''
   },
   methods: {
     onClick (e) {
@@ -88,6 +94,13 @@ export default {
     },
     onMouseEnter () {
       this.hovered = true
+    },
+    listenKeyboard () {
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') {
+          console.log("")
+        }
+      })
     },
     selectItem (e) {
       // finding selected value by data-key attribute
@@ -130,7 +143,18 @@ export default {
       font-size: inherit
       outline: none
       width: 100%
-
+      position: relative
+      z-index: 2
+      &::placeholder
+        padding-left: 2rem
+        text-transform: capitalize
+    &__search
+      display: flex
+      align-items: center
+      height: 100%
+      color: $blue
+      position: absolute
+      left: .3rem
     &__options
       transition: opacity .2s
       display: block
@@ -146,4 +170,7 @@ export default {
         padding: 5px
         &:hover
           background: #3a78a8
+  .svg-icon--search
+    width: 1rem!important
+    height: 1rem
 </style>

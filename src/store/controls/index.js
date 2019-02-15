@@ -1,112 +1,7 @@
 export default {
   state: {
-    presets: [
-      {
-        name: 'A-10A Thunderbolt',
-        id: 1
-      },
-      {
-        name: 'Some another Thunderbolt',
-        id: 2
-      }
-    ],
-    config: [
-      {
-        'action set': 'Absolute Camera Vertical View',
-        'category': 1,
-        'keyboard': 3,
-        'saitek pro-flight 1': 2,
-        'saitek pro-flight 2': null,
-        'mouse': null,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Camera Zoom View',
-        'category': 2,
-        'keyboard': 8,
-        'saitek pro-flight 1': 1,
-        'saitek pro-flight 2': null,
-        'mouse': null,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View1',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View2',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View3',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View4',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View5',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      },
-      {
-        'action set': 'Radar View6',
-        'category': 3,
-        'keyboard': 13,
-        'saitek pro-flight 1': 6,
-        'saitek pro-flight 2': null,
-        'mouse': 4,
-        'mouse2': 1
-      }
-    ],
-    category: [
-      {
-        name: 'Environment System',
-        id: 1
-      },
-      {
-        name: 'Flight Control',
-        id: 2
-      },
-      {
-        name: 'Targeting',
-        id: 3
-      }
-    ],
+    config: [],
+    category: [],
     keyboard: [
       {
         key: 'Enter',
@@ -166,24 +61,6 @@ export default {
         key: 'Dbl LClick',
         code: 4
       }
-    ],
-    'mouse2': [
-      {
-        key: 'LClick',
-        code: 1
-      },
-      {
-        key: 'RClick',
-        code: 2
-      },
-      {
-        key: 'Dbl RClick',
-        code: 3
-      },
-      {
-        key: 'Dbl LClick',
-        code: 4
-      }
     ]
   },
   mutations: {
@@ -192,6 +69,12 @@ export default {
       if (payload) {
         state.config = payload
       }
+    },
+    SET_CONFIG (state, payload) {
+      state.config = payload // <config> array
+    },
+    SET_CATEGORIES (state, payload) {
+      state.category = payload // <categories> array
     }
   },
   actions: {

@@ -1,8 +1,16 @@
 {
   "globals": {
-    "fly": "полёт",
+    "fly": "взлет",
     "controls": "управление",
-    "special_options": "специальные настройки"
+    "special_options": "специальные настройки",
+    "search": "поиск"
+  },
+  "missions": {
+    "campaign": "кампания",
+    "mission_generator": "генератор миссий",
+    "mission": "миссия",
+    "training": "обучение",
+    "continue_current": "продолжить кампанию"
   },
   "system_menu": {
     "news": "новости",

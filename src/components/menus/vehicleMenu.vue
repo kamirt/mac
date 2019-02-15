@@ -1,31 +1,32 @@
 <template lang="pug">
   div(id="vehicles-carousel",
-       @mousedown="handleMouseDown",
-       @mousemove="handleMove",
-       @mouseup="handleMouseUp",
-       @mouseleave="handleMouseUp")
-    div(class="carousel",
-      ref="carousel",
-      :class="{ vertical: vertical }",
-      :style="getTransform")
-      div(v-for="item in vehicles",
-           :key="item.id",
-           class="vehicle",
-           :class="selectedVehicle == item.id ? 'selected' : ''",
-           @mouseup="(e) => handleMouseUp(e, item)")
-        transition(name="fade")
-          div(v-show="selectedVehicle == item.id && !vertical", class="vehicle__fly") {{ $content.globals.fly }}
-        div(class="vehicle__pic", :class="{ blocked: item.blocked, 'buy-only': item['buy_only'] }")
-          div(class="vehicle__overlay")
-            div(v-if="selectedVehicle == item.id", class="selected-child-arrow")
-              span {{ item.name }}
-          div(v-if="item['buy_only']", class="unlock")
-          img(:src="item.image", alt="")
-        div(v-if="!vertical", class="vehicle__details")
-          p(v-if="selectedVehicle == item.id", class="vehicle__name") {{ item.name }}
-          p(v-if="selectedVehicle == item.id", class="vehicle__desc") {{ item.description }}
+       @mousedown="handleMouseDown")
+    div(class="carousel", ref="carousel",
+    :class="{ vertical: vertical }")
+      div(class="vehicle", v-for="(item, key) in vehicles",
+        :key="item.id",
+        :class="selectedVehicle == item.id ? 'selected' : ''",
+        @mouseup="(e) => handleMouseUp(e, item)",
+        @mouseenter="(e) => handleMouseEnter(e, item)")
+        div(v-visible="selectedVehicle == item.id && !vertical", class="vehicle__fly")
+          span {{ $content.globals.fly }}
+        transition(name="fade", appear, @after-enter="onAfterEnter")
+          div(class="vehicle__pic", :class="{ blocked: item.blocked, 'buy-only': item['buy_only'] }")
+            div(class="vehicle__overlay")
+              div(v-if="selectedVehicle == item.id", class="selected-child-arrow")
+                span {{ item.name }}
+            div(v-if="item['buy_only']", class="unlock")
+            img(:src="item.image", :class="hoveredVehicle == item.id ? 'full-opacity' : null")
+        div(v-if="!vertical",
+            class="vehicle__details"
+            :class="hoveredVehicle == item.id ? 'vehicle__details--hovered' : null")
+          div(v-visible="selectedVehicle != item.id",
+              class="vehicle__details--small") {{ item.name }}
+          p(class="vehicle__name") {{ selectedVehicle != item.id && hoveredVehicle == item.id ? item.index : item.name }}
+          p(class="vehicle__desc") {{ item.description }}
 </template>
 <script>
+import _ from 'lodash'
 export default {
   name: 'vehicle-menu',
   props: {
@@ -39,20 +40,38 @@ export default {
     },
     selected () {
       return this.$store.state.vehicles.selected
-    },
-    getTransform () {
-      return `transform: translateX(${this.offset}px)`
     }
   },
   data () {
+    let spinFunc = _.debounce((itemOffset, direction) => {
+      this.spinCarousel(itemOffset, direction)
+    }, 250, { leading: true, maxWait: 250 })
     return {
-      down: false,
+      down: false, // detects if mouse button pressed
       xPos: 0,
-      offset: 0,
+      offset: 0, // offset of carousel
       dragged: 0,
-      totalWidth: 0,
+      wheel: 0, // detects mouse wheel scroll
+      itemWidth: null, // width of the only item of carousel
+      itemOffset: 0,
       selectedVehicle: null,
-      moving: false
+      hoveredVehicle: null,
+      moving: false,
+      timeoutScroll: true,
+      carouselCreated: false,
+      spinFunc
+    }
+  },
+  watch: {
+    offset (next, prev) {
+      let direction = next > prev ? 1 : -1
+      this.spinFunc(direction)
+    },
+    vehicles (next, prev) {
+      if (!prev.length && next.length) {
+        let indexed = this.vehicles.map((el, index) => { return { index: index + 1, ...el } })
+        this.$store.commit('SET_VEHICLES', { vehicles: indexed, selected: this.selected })
+      }
     }
   },
   created () {
@@ -71,42 +90,75 @@ export default {
       persistent: false
     })
   },
-  mounted () {
-    const config = { childList: true }
-    const callback = (mutationList, observer) => {
-      this.initCarousel()
-    }
-    const observer = new MutationObserver(callback)
-    observer.observe(this.$refs.carousel, config)
-    this.initCarousel()
-  },
   beforeDestroy () {
     window.removeEventListener('keyup', this.slideOnes)
   },
   methods: {
-    initCarousel () {
-      const vEls = this.$el.querySelectorAll('.vehicle')
-      if (!vEls.length) return
-      this.totalWidth = vEls.length * vEls[0].clientWidth
-      window.addEventListener('keyup', this.slideOnes)
+    onAfterEnter () {
+      if (!this.carouselCreated) {
+        this.carouselCreated = true
+        const vEls = this.$el.querySelectorAll('.vehicle')
+        this.initCarousel(vEls)
+      }
+    },
+    initCarousel (vEls) {
+      if (!vEls.length) console.error('wrong elements passed to carousel initialization function')
+      this.itemWidth = vEls[0].clientWidth
+      window.addEventListener('mousemove', this.handleMove)
+      window.addEventListener('keydown', this.slideOnes)
+      window.addEventListener('mouseup', this.handleMouseUp)
+      this.$el.addEventListener('wheel', (e) => {
+        if (this.timeoutScroll) {
+          this.timeoutScroll = false
+          setTimeout(() => {
+            this.timeoutScroll = true
+          }, 100)
+          if (e.wheelDelta > 0) {
+            this.slideOnes({ code: 'ArrowLeft' })
+            return
+          }
+          this.slideOnes({ code: 'ArrowRight' })
+        }
+      })
+    },
+    spinCarousel (direction) {
+      /*
+        because we want to cycle carousel not by slide pages as usual
+        we have to move right or left DOM element from one side to another
+        depends on direction
+      */
+      let carousel = this.$refs.carousel
+      let beginOffset = direction * this.itemWidth * -1
+      // moving carousel right to one vehicle
+      if (direction === -1) {
+        let sliced = _.slice(this.vehicles, 1, this.vehicles.length)
+        let first = _.first(this.vehicles)
+        this.$store.commit('SET_VEHICLES', { vehicles: _.concat(sliced, first), selected: this.selected })
+        // moving it left
+      } else {
+        let sliced = this.vehicles.slice(0, this.vehicles.length - 1)
+        let last = _.last(this.vehicles)
+        this.$store.commit('SET_VEHICLES', { vehicles: _.concat(last, sliced), selected: this.selected })
+      }
+      /*
+        we should move carousel to the opposite direction
+        like the element is not added yet
+      */
+      carousel.style.transform = `translateX(${beginOffset}px)`
+      // and then animate moving
+      this.$anim(carousel, { translateX: ['0px', `${beginOffset}px`], opacity: [1, 0.75] }, { duration: 200 })
     },
     handleMove (e) {
       if (this.down) {
+        // triggering that mouse both down and move
         this.moving = true
-        requestAnimationFrame(() => {
-          let offset = e.clientX - this.xPos
-          let maximum = this.totalWidth - 250
-          let total = this.dragged + offset
-          if (total > 0) {
-            total = 0
-            this.dragged = 0
-          }
-          if (total < maximum * -1) {
-            total = maximum * -1
-            this.dragged = maximum * -1
-          }
-          this.offset = total
-        })
+        // deleting current mouse position from previous saved
+        // to calculate offset
+        let offset = e.clientX - this.xPos
+        // dragged is previous offset so adding it
+        // to not starting from beginning
+        let total = this.dragged + offset
+        this.offset = total
       }
     },
     handleMouseDown (e) {
@@ -122,24 +174,19 @@ export default {
       this.dragged = this.offset
       this.moving = false
     },
+    handleMouseEnter (e, item) {
+      if (item.id === this.selectedVehicle) return
+      this.hoveredVehicle = item.id
+    },
     slideOnes (e) {
       let total
-      const max = this.totalWidth - 250
       if (e.code === 'ArrowLeft') {
-        total = this.offset + 250
-        if (total > 0) {
-          total = 0
-          this.dragged = 0
-        }
+        total = this.offset + this.itemWidth
         this.offset = total
         this.dragged = total
       }
       if (e.code === 'ArrowRight') {
-        total = this.offset - 250
-        if (total < max * -1) {
-          total = max * -1
-          this.dragged = max * -1
-        }
+        total = this.offset - this.itemWidth
         this.offset = total
         this.dragged = total
       }
@@ -152,15 +199,19 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
+  .carousel-item-wrapper
+    display: flex
   #vehicles-carousel
     width: 100%
     overflow-x: hidden
   .carousel
     display: flex
     padding-top: 0
-    padding-bottom: calcsize(150)
     padding-top: calcsize(100)
-    transition: transform .1s
+    &.offset-left
+      transform: translateX(-100px)
+    &.offset-right
+      transform: translateX(100px)
     &.vertical
       padding: 0
       & .vehicle
@@ -181,28 +232,51 @@ export default {
   .vehicle
     @include make-font('Roboto', normal)
     font-size: calcsize(32)
-    padding: 10px
+    padding: 0 10px
     position: relative
     box-sizing: content-box
     &__details
-      position: absolute
-      margin-left: -10px
+      width: 100%
+      &--small
+        color: $blue
+        font-size: 18px
+        margin-top: -1.2vw
+        text-align: center
+        opacity: .7
+      &--hovered
+        & .vehicle__name
+          visibility: visible
+          color: #ffffff
+          opacity: .15
+        & .vehicle__desc
+          visibility: visible
+          opacity: .7
+        & .vehicle__details--small
+          opacity: 1
     &__fly
       @include make-font('Roboto Condensed', bold)
       color: $blue
       font-size: calcsize(55)
-      position: absolute
-      top: calcsize(-80)
-      margin: 0 0 27px -13px
+      position: relative
+      margin: 0 0 38px 0
       text-transform: uppercase
+      height: 5vw
+      & span
+        display: flex
+        position: absolute
+        background: $base
+        height: 100%
+        align-items: center
+        padding: 0 .6vw
+        border-radius: calcsize(3)
       &:before
         content: ''
         position: absolute
-        bottom: -5px
-        left: 28px
-        border-top: 10px solid $orange
-        border-left: 11px solid transparent
-        border-right: 11px solid transparent
+        bottom: -1vw
+        left: 15px
+        border-top: 8px solid $orange
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
     &__pic
       display: flex
       align-items: center
@@ -219,14 +293,20 @@ export default {
         background: rgba(0, 0, 0, 0.3)
       & img
         transition: transform .5s
-        width: 75%
+        width: 60%
+        //margin: -10px 0 0 -10px
         pointer-events: none
+        opacity: 0.7
+        &.full-opacity
+          opacity: 1
     &__name
       color: $orange
-      margin: 20px 0 10px 0
+      margin: 10px 0 10px 0
+      visibility: hidden
     &__desc
       font-size: calcsize(12)
       color: #fff
+      visibility: hidden
   .unlock
     position: absolute
     width: 100%
@@ -239,15 +319,24 @@ export default {
   .selected
     & img
       transform: scale(1.1)
+      opacity: 1
+    & .vehicle__details
+      & .vehicle__name
+        margin-top: 10px
+        color: $orange
+        opacity: 1
+        visibility: visible!important
+      & .vehicle__desc
+        opacity: 1
+        visibility: visible!important
     & .vehicle__pic
-      //background: url('../../assets/icons/dot_grid.svg')
       &:before
         content: ''
         position: absolute
         width: 10px
         height: 10px
         bottom: -2px
-        left: -10px
+        left: 1px
         border-bottom: 2px solid
         border-left: 2px solid
         border-color: $orange
@@ -258,16 +347,16 @@ export default {
         width: 10px
         height: 10px
         bottom: -2px
-        right: -2px
+        right: -4px
         border-bottom: 2px solid
         border-right: 2px solid
         border-color: $orange
         border-radius: 0 0 4px 0
     & .vehicle__overlay
       top: -10px
-      left: -10px
+      left: 1px
       position: absolute
-      width: calc( 100% + 10px )
+      width: 100%
       height: calc( 100% + 10px )
       border: 1px solid rgba(255, 195, 100, .3)
       border-radius: 4px
@@ -310,7 +399,7 @@ export default {
       position: absolute
     &:before
       content: ''
-      background: url('../../assets/img/backgrounds/dot_grid.svg')
+      //background: url('../../assets/img/backgrounds/dot_grid.svg')
       background-size: 7%
       width: 100%
       height: 100%

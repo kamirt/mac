@@ -1,29 +1,29 @@
 {
   "globals": {
-    "fly": "взлет",
-    "controls": "управление",
-    "special_options": "специальные настройки",
-    "search": "поиск"
+    "fly": "fly",
+    "controls": "controls",
+    "special_options": "special options",
+    "search": "search"
   },
   "missions": {
-    "campaign": "кампания",
-    "mission_generator": "генератор миссий",
-    "mission": "миссия",
-    "training": "обучение",
-    "continue_current": "продолжить кампанию"
+    "campaign": "campaign",
+    "mission_generator": "mission generator",
+    "mission": "mission",
+    "training": "training",
+    "continue_current": "continue_current_campaign"
   },
   "system_menu": {
-    "news": "новости",
-    "video": "видео",
-    "forum": "форум",
-    "support": "поддержка",
-    "shop": "магазин"
+    "news": "news",
+    "video": "video",
+    "forum": "forum",
+    "support": "support",
+    "shop": "shop"
   },
   "main_menu": {
-    "singleplayer": "одиночная игра",
-    "multiplayer": "мультиплеер",
-    "aircraft_settings": "настройки самолета",
-    "game_settings": "настройки игры",
-    "exit": "выход"
+    "singleplayer": "singleplayer",
+    "multiplayer": "multiplayer",
+    "aircraft_settings": "aircraft settings",
+    "game_settings": "game settings",
+    "exit": "exit"
   }
 }

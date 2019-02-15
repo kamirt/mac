@@ -68,7 +68,7 @@ export default {
       this.spinFunc(direction)
     },
     vehicles (next, prev) {
-      if (!prev.length && next.length) {
+      if (!next[0].index) {
         let indexed = this.vehicles.map((el, index) => { return { index: index + 1, ...el } })
         this.$store.commit('SET_VEHICLES', { vehicles: indexed, selected: this.selected })
       }

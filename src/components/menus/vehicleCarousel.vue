@@ -2,7 +2,7 @@
   div(id="vehicles-carousel",
        @mousedown="handleMouseDown")
     div(class="carousel", ref="carousel",
-    :class="{ vertical: vertical }")
+    :class="{ vertical: vertical }", :style="transform")
       div(class="vehicle", v-for="(item, key) in vehicles",
         :key="item.id",
         :class="selectedVehicle == item.id ? 'selected' : ''",
@@ -20,9 +20,9 @@
         div(v-if="!vertical",
             class="vehicle__details"
             :class="hoveredVehicle == item.id ? 'vehicle__details--hovered' : null")
-          div(v-visible="selectedVehicle != item.id",
+          div(v-visible="selectedVehicle != item.id && hoveredVehicle != item.id",
               class="vehicle__details--small") {{ item.name }}
-          p(class="vehicle__name") {{ selectedVehicle != item.id && hoveredVehicle == item.id ? item.index : item.name }}
+          p(class="vehicle__name") {{ selectedVehicle != item.id && hoveredVehicle == item.id ? item.name : item.name }}
           p(class="vehicle__desc") {{ item.description }}
 </template>
 <script>
@@ -35,6 +35,9 @@ export default {
     }
   },
   computed: {
+    transform () {
+      return `transform: translateX(${this.offset}px)`
+    },
     vehicles () {
       return this.$store.state.vehicles.vehicles
     },
@@ -43,8 +46,8 @@ export default {
     }
   },
   data () {
-    let spinFunc = _.debounce((itemOffset, direction) => {
-      this.spinCarousel(itemOffset, direction)
+    let slideFunc = _.debounce((e) => {
+      this.slideOnes(e)
     }, 400, { leading: true, maxWait: 400 })
     return {
       down: false, // detects if mouse button pressed
@@ -53,25 +56,15 @@ export default {
       dragged: 0,
       wheel: 0, // detects mouse wheel scroll
       itemWidth: null, // width of the only item of carousel
+      totalWidth: 0,
       itemOffset: 0,
       selectedVehicle: null,
       hoveredVehicle: null,
       moving: false,
       timeoutScroll: true,
       carouselCreated: false,
-      spinFunc
-    }
-  },
-  watch: {
-    offset (next, prev) {
-      let direction = next > prev ? 1 : -1
-      this.spinFunc(direction)
-    },
-    vehicles (next, prev) {
-      if (!next[0].index) {
-        let indexed = this.vehicles.map((el, index) => { return { index: index + 1, ...el } })
-        this.$store.commit('SET_VEHICLES', { vehicles: indexed, selected: this.selected })
-      }
+      maxOffset: 0,
+      slideFunc
     }
   },
   created () {
@@ -91,7 +84,7 @@ export default {
     })
   },
   beforeDestroy () {
-    window.removeEventListener('keyup', this.slideOnes)
+    window.removeEventListener('keydown', this.slideOnes)
   },
   methods: {
     onAfterEnter () {
@@ -102,10 +95,18 @@ export default {
       }
     },
     initCarousel (vEls) {
+      this.carousel = this.$el.querySelector('.carousel')
       if (!vEls.length) console.error('wrong elements passed to carousel initialization function')
+      vEls.forEach((el) => {
+        el.style.width = el.clientWidth + 'px'
+        el.style.height = el.clientHeight + 'px'
+      })
       this.itemWidth = vEls[0].clientWidth
+      this.totalWidth = this.carousel.clientWidth
+      this.maxOffset = this.totalWidth - this.itemWidth * this.vehicles.length - 100
+      vEls[0].parentNode.setAttribute('will-change', true)
       window.addEventListener('mousemove', this.handleMove)
-      window.addEventListener('keydown', this.slideOnes)
+      window.addEventListener('keydown', this.slideFunc)
       window.addEventListener('mouseup', this.handleMouseUp)
       this.$el.addEventListener('wheel', (e) => {
         if (this.timeoutScroll) {
@@ -114,47 +115,30 @@ export default {
             this.timeoutScroll = true
           }, 100)
           if (e.wheelDelta > 0) {
-            this.slideOnes({ code: 'ArrowLeft' })
+            this.slideFunc({ code: 'ArrowLeft' })
             return
           }
-          this.slideOnes({ code: 'ArrowRight' })
+          this.slideFunc({ code: 'ArrowRight' })
         }
       })
     },
-    spinCarousel (direction) {
-      /*
-        because we want to cycle carousel not by slide pages as usual
-        we have to move right or left DOM element from one side to another
-        depends on direction
-      */
-      let carousel = this.$refs.carousel
-      this.$anim(carousel, 'stop')
-      let beginOffset = direction * this.itemWidth * -1
-      // moving carousel right to one vehicle
-      if (direction === -1) {
-        let sliced = _.slice(this.vehicles, 1, this.vehicles.length)
-        let first = _.first(this.vehicles)
-        this.$store.commit('SET_VEHICLES', { vehicles: _.concat(sliced, first), selected: this.selected })
-        // moving it left
-      } else {
-        let sliced = this.vehicles.slice(0, this.vehicles.length - 1)
-        let last = _.last(this.vehicles)
-        this.$store.commit('SET_VEHICLES', { vehicles: _.concat(last, sliced), selected: this.selected })
-      }
-      // and then animate moving
-      this.$anim(carousel, { translateX: [`0px`, `${beginOffset}px`] }, { duration: 400, easing: 'linear' })
-    },
     handleMove (e) {
       if (this.down) {
-        // triggering that mouse both down and move
         this.moving = true
-        // deleting current mouse position from previous saved
-        // to calculate offset
-        let offset = e.clientX - this.xPos
-        // dragged is previous offset so adding it
-        // to not starting from beginning
-        let total = this.dragged + offset
-        this.offset = total
+        requestAnimationFrame(() => {
+          let offset = e.clientX - this.xPos
+          let total = this.dragged + offset
+          if (total > 0) {
+            total = 0
+            this.dragged = 0
+          }
+          if (total < this.maxOffset) {
+            total = this.maxOffset
+            this.dragged = this.maxOffset
+          }
+
+          this.offset = total
+        })
       }
     },
     handleMouseDown (e) {
@@ -178,11 +162,19 @@ export default {
       let total
       if (e.code === 'ArrowLeft') {
         total = this.offset + this.itemWidth
+        if (total > 0) {
+          total = 0
+          this.dragged = 0
+        }
         this.offset = total
         this.dragged = total
       }
       if (e.code === 'ArrowRight') {
         total = this.offset - this.itemWidth
+        if (total < this.maxOffset) {
+          total = this.maxOffset
+          this.dragged = this.maxOffset
+        }
         this.offset = total
         this.dragged = total
       }
@@ -202,10 +194,7 @@ export default {
     display: flex
     padding-top: 0
     padding-top: calcsize(100)
-    &.offset-left
-      transform: translateX(-100px)
-    &.offset-right
-      transform: translateX(100px)
+    transition: transform .3s
     &.vertical
       padding: 0
       & .vehicle
@@ -229,6 +218,7 @@ export default {
     padding: 0 10px
     position: relative
     box-sizing: content-box
+    transition: all .5s
     &__details
       width: 100%
       &--small

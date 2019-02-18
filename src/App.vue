@@ -11,7 +11,7 @@
 <script>
 import mainMenu from '@/components/menus/mainMenu'
 import systemMenu from '@/components/menus/systemMenu'
-import vehicleMenu from '@/components/menus/vehicleMenu'
+import vehicleMenu from '@/components/menus/vehicleCarousel'
 import profile from '@/components/profile/Profile'
 
 export default {

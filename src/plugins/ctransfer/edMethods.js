@@ -91,6 +91,34 @@ export default {
             name: 'A-10A',
             image: require('@/assets/img/temp/SU_33.png'),
             description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
+          },
+          {
+            id: 9,
+            order: 7,
+            name: 'A-10A',
+            image: require('@/assets/img/temp/SU_27C.png'),
+            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
+          },
+          {
+            id: 10,
+            order: 7,
+            name: 'A-10A',
+            image: require('@/assets/img/temp/SU_27C.png'),
+            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
+          },
+          {
+            id: 11,
+            order: 7,
+            name: 'A-10A',
+            image: require('@/assets/img/temp/SU_27C.png'),
+            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
+          },
+          {
+            id: 12,
+            order: 7,
+            name: 'A-10A',
+            image: require('@/assets/img/temp/SU_27C.png'),
+            description: 'Is intended for use against groud targets, but especially tanks and other armored vehicles.'
           }
         ]
       }

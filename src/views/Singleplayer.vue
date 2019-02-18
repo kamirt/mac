@@ -13,7 +13,7 @@
           div(class="col missions-offset")
             div(class="missions-block campaign", @mouseenter='handleEnter', @mouseleave='handleLeave')
               div(class="video")
-                video(poster="../assets/img/backgrounds/campaign.png", preload)
+                video(poster="../assets/img/backgrounds/campaign.png", muted)
                   source(:src="videoSources.campaign")
               div(class="missions-block__text")
                 span {{ $content.missions.campaign }}
@@ -33,7 +33,7 @@
           div(class="col")
             div(class="missions-block generator", @mouseenter='handleEnter', @mouseleave='handleLeave')
               div(class="video")
-                video(poster="../assets/img/backgrounds/generator.png", preload)
+                video(poster="../assets/img/backgrounds/generator.png", muted)
                   source(:src="videoSources.generator")
               div(class="missions-block__text")
                 span {{ $content.missions.mission_generator }}
@@ -43,14 +43,14 @@
               div(class="corners")
                 svg-icon(name="frame_corner", class="corner corner--right-top corner--left-offset")
               div(class="video")
-                video(poster="../assets/img/backgrounds/training.png", preload)
+                video(poster="../assets/img/backgrounds/training.png", muted)
                   source(:src="videoSources.training")
               div(class="missions-block__text") 
                 span {{ $content.missions.training }}
           div(class="col")
             div(class="missions-block mission", @mouseenter='handleEnter', @mouseleave='handleLeave')
               div(class="video")
-                video(poster="../assets/img/backgrounds/mission.png", preload)
+                video(poster="../assets/img/backgrounds/mission.png", muted)
                   source(:src="videoSources.mission")
               div(class="missions-block__text")
                 span {{ $content.missions.mission }}
@@ -84,9 +84,10 @@ export default {
       this.$router.back()
     },
     handleEnter (e) {
-      let className = e.target.className.split(' ')[1]
-      const video = e.target.querySelector('video')
-      if (video) video.play()
+      let video = e.target.getElementsByTagName('video')
+      if (video.length) {
+        video[0].play()
+      }
     },
     handleLeave (e) {
       const video = e.target.querySelector('video')
@@ -160,6 +161,8 @@ export default {
       justify-content: center
       height: 100%
       width: 100%
+      & span
+        text-align: center
       &:hover
         color: #fff
         text-shadow: rgba(255, 255, 255, 0.75) 0px 0px 25px
@@ -201,4 +204,7 @@ export default {
       width: 100%
   svg
     transition: fill .2s
+  @media screen and (max-aspect-ratio: 16/9)
+    .missions-block__text
+      font-size: 2.7rem
 </style>

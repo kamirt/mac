@@ -87,9 +87,11 @@ export default {
   .logo-container
     margin-top: 17%
     width: 100%
-    min-height: 280px
+    min-height: 40vh
     background: url("../../assets/img/backgrounds/modern_air_combat_logo.svg") center/100%
     background-repeat: no-repeat
+    & svg
+      width: 100%
   #home-icon
     display: block
     background: url("../../assets/img/backgrounds/mac_logo.svg") center/cover

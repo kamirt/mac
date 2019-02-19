@@ -1,7 +1,7 @@
 <template>
   <svg :class="className" xmlns="http://www.w3.org/2000/svg">
+    <slot></slot>
     <use :xlink:href="iconPath" xmlns:xlink="http://www.w3.org/1999/xlink"/>
-      <slot></slot>
   </svg>
 </template>
 

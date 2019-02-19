@@ -20,9 +20,9 @@
         div(v-if="!vertical",
             class="vehicle__details"
             :class="hoveredVehicle == item.id ? 'vehicle__details--hovered' : null")
-          div(v-visible="selectedVehicle != item.id && hoveredVehicle != item.id",
+          div(v-visible="selectedVehicle != item.id",
               class="vehicle__details--small") {{ item.name }}
-          p(class="vehicle__name") {{ selectedVehicle != item.id && hoveredVehicle == item.id ? item.name : item.name }}
+          p(class="vehicle__name") {{ selectedVehicle === item.id ? item.name : '&nbsp;' }}
           p(class="vehicle__desc") {{ item.description }}
 </template>
 <script>
@@ -97,10 +97,10 @@ export default {
     initCarousel (vEls) {
       this.carousel = this.$el.querySelector('.carousel')
       if (!vEls.length) console.error('wrong elements passed to carousel initialization function')
-      vEls.forEach((el) => {
-        el.style.width = el.clientWidth + 'px'
-        el.style.height = el.clientHeight + 'px'
-      })
+      // vEls.forEach((el) => {
+      //   el.style.width = el.clientWidth + 'px'
+      //   el.style.height = el.clientHeight + 'px'
+      // })
       this.itemWidth = vEls[0].clientWidth
       this.totalWidth = this.carousel.clientWidth
       this.maxOffset = this.totalWidth - this.itemWidth * this.vehicles.length - 100
@@ -193,7 +193,7 @@ export default {
   .carousel
     display: flex
     padding-top: 0
-    padding-top: calcsize(100)
+    //padding-top: calcsize(100)
     transition: transform .3s
     &.vertical
       padding: 0

@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .system-menu-wrapper
     width: 100%
     position: absolute

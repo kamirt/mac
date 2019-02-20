@@ -30,9 +30,6 @@ export default {
 }
 </script>
 <style lang="sass">
-  @import './assets/css/fonts'
-  @import './assets/css/lib/bootstrap/bootstrap-grid.scss'
-
   body
    background: url('./assets/img/backgrounds/home-back.png') center/cover, #000
 

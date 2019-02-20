@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .news-block
     &__content
       display: flex

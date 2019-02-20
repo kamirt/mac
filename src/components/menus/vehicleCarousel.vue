@@ -313,29 +313,6 @@ export default {
       & .vehicle__desc
         opacity: 1
         visibility: visible!important
-    & .vehicle__pic
-      &:before
-        content: ''
-        position: absolute
-        width: 10px
-        height: 10px
-        bottom: -2px
-        left: 1px
-        border-bottom: 2px solid
-        border-left: 2px solid
-        border-color: $orange
-        border-radius: 0 0 0 4px
-      &:after
-        content: ''
-        position: absolute
-        width: 10px
-        height: 10px
-        bottom: -2px
-        right: -4px
-        border-bottom: 2px solid
-        border-right: 2px solid
-        border-color: $orange
-        border-radius: 0 0 4px 0
     & .vehicle__overlay
       top: -10px
       left: 1px
@@ -398,4 +375,21 @@ export default {
       border-bottom: 6px solid transparent
       bottom: 13px
       right: -20px
+  .selected .vehicle__pic:before, .selected .vehicle__pic:after
+    content: ''
+    position: absolute
+    width: 10px
+    height: 10px
+    bottom: -2px
+    border-bottom: 2px solid
+  .selected .vehicle__pic:before
+    left: 1px
+    border-left: 2px solid
+    border-radius: 0 0 0 4px
+    border-color: $orange
+  .selected .vehicle__pic:after
+    right: -4px
+    border-right: 2px solid
+    border-radius: 0 0 4px 0
+    border-color: $orange
 </style>

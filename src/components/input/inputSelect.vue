@@ -121,7 +121,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
   .input-select
     position: relative
     outline: none

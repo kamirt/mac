@@ -44,7 +44,7 @@ export default {
     top: calcsize(-10)
     z-index: 2
     &__link
-      font-size: calcsize(14)
+      font-size: .7rem
       display: flex
       align-items: center
     &__image

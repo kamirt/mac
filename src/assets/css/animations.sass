@@ -1,10 +1,18 @@
+// fade
 .fade-enter-active, .fade-leave-active
   transition: opacity .2s
 .fade-enter, .fade-leave-to
   opacity: 0
 
+// left
 .left-enter-active, .left-leave-active
   transition: transform .1s ease-out
 
 .left-enter, .left-leave-to
   transform: translateX(-100%)
+
+// fade-slow
+.fade-slow-enter-active, .fade-slow-leave-active
+  transition: opacity .8s
+.fade-slow-enter, .fade-slow-leave-to
+  opacity: 0

@@ -1,0 +1,5308 @@
+events = 
+{
+	[1] = 
+	{
+		type	=	"mission start",
+		t	=	28800,
+	}, -- end of [1]
+	[2] = 
+	{
+		type	=	"took control",
+		t	=	28800,
+	}, -- end of [2]
+	[3] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #041",
+		t	=	28810.584,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"55",
+	}, -- end of [3]
+	[4] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28811.492,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [4]
+	[5] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #054",
+		target	=	"Новый юнит #041",
+		t	=	28812.859,
+		initiatorMissionID	=	"68",
+		targetMissionID	=	"55",
+	}, -- end of [5]
+	[6] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #054",
+		t	=	28813.47,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"68",
+	}, -- end of [6]
+	[7] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #042",
+		t	=	28814.482,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"56",
+	}, -- end of [7]
+	[8] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28814.588,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [8]
+	[9] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #042",
+		t	=	28815.032,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"56",
+	}, -- end of [9]
+	[10] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #042",
+		t	=	28815.032,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"56",
+	}, -- end of [10]
+	[11] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28815.503,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [11]
+	[12] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #042",
+		t	=	28815.641,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"56",
+	}, -- end of [12]
+	[13] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28815.695,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [13]
+	[14] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28815.832,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [14]
+	[15] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #042",
+		t	=	28815.941,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"56",
+	}, -- end of [15]
+	[16] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28816.728,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [16]
+	[17] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28817.11,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [17]
+	[18] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #054",
+		target	=	"Новый юнит #041",
+		t	=	28818.156,
+		initiatorMissionID	=	"68",
+		targetMissionID	=	"55",
+	}, -- end of [18]
+	[19] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28818.315,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [19]
+	[20] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28818.555,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [20]
+	[21] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #054",
+		t	=	28818.764,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"68",
+	}, -- end of [21]
+	[22] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28818.977,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [22]
+	[23] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #055",
+		target	=	"Новый юнит #081",
+		t	=	28819.255,
+		initiatorMissionID	=	"69",
+		targetMissionID	=	"95",
+	}, -- end of [23]
+	[24] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28819.882,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [24]
+	[25] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28820.287,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [25]
+	[26] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #055",
+		t	=	28820.465,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"69",
+	}, -- end of [26]
+	[27] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #006",
+		t	=	28820.796,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"13",
+	}, -- end of [27]
+	[28] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #011",
+		t	=	28820.879,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"18",
+	}, -- end of [28]
+	[29] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28821.124,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [29]
+	[30] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #028",
+		t	=	28821.124,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"42",
+	}, -- end of [30]
+	[31] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28821.194,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [31]
+	[32] = 
+	{
+		type	=	"hit",
+		weapon	=	"Fixed QF95 206R",
+		initiator	=	"Новый юнит #006",
+		target	=	"Новый юнит #028",
+		t	=	28821.414,
+		initiatorMissionID	=	"13",
+		targetMissionID	=	"42",
+	}, -- end of [32]
+	[33] = 
+	{
+		type	=	"dead",
+		t	=	28821.414,
+		initiatorMissionID	=	"42",
+		initiator	=	"Новый юнит #028",
+	}, -- end of [33]
+	[34] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28821.967,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [34]
+	[35] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28821.984,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [35]
+	[36] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28822.772,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [36]
+	[37] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28822.891,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [37]
+	[38] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #097",
+		target	=	"Новый юнит #053",
+		t	=	28823.067,
+		initiatorMissionID	=	"111",
+		targetMissionID	=	"67",
+	}, -- end of [38]
+	[39] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28823.49,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [39]
+	[40] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28823.49,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [40]
+	[41] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #097",
+		t	=	28824.073,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"111",
+	}, -- end of [41]
+	[42] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #002",
+		t	=	28824.199,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"9",
+	}, -- end of [42]
+	[43] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28825.356,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [43]
+	[44] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28825.356,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [44]
+	[45] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #097",
+		target	=	"Новый юнит #053",
+		t	=	28825.704,
+		initiatorMissionID	=	"111",
+		targetMissionID	=	"67",
+	}, -- end of [45]
+	[46] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28825.743,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [46]
+	[47] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28826.264,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [47]
+	[48] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28826.274,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [48]
+	[49] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28826.425,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [49]
+	[50] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #097",
+		t	=	28826.617,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"111",
+	}, -- end of [50]
+	[51] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28826.647,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [51]
+	[52] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #041",
+		t	=	28826.673,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"55",
+	}, -- end of [52]
+	[53] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28826.914,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [53]
+	[54] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28826.914,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [54]
+	[55] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28827.22,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [55]
+	[56] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28827.22,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [56]
+	[57] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28827.321,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [57]
+	[58] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28827.475,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [58]
+	[59] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28827.475,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [59]
+	[60] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28827.569,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [60]
+	[61] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #097",
+		t	=	28827.813,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"111",
+	}, -- end of [61]
+	[62] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28827.998,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [62]
+	[63] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28827.998,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [63]
+	[64] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #041",
+		t	=	28828.629,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"55",
+	}, -- end of [64]
+	[65] = 
+	{
+		type	=	"hit",
+		weapon	=	"Fixed QF95 206R",
+		initiator	=	"Новый юнит #002",
+		target	=	"Новый юнит #041",
+		t	=	28828.746,
+		initiatorMissionID	=	"9",
+		targetMissionID	=	"55",
+	}, -- end of [65]
+	[66] = 
+	{
+		type	=	"dead",
+		t	=	28828.746,
+		initiatorMissionID	=	"55",
+		initiator	=	"Новый юнит #041",
+	}, -- end of [66]
+	[67] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28828.754,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [67]
+	[68] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28828.782,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [68]
+	[69] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #012",
+		t	=	28828.923,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"19",
+	}, -- end of [69]
+	[70] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28829.227,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [70]
+	[71] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28829.481,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [71]
+	[72] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28829.582,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [72]
+	[73] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #014",
+		t	=	28829.84,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"21",
+	}, -- end of [73]
+	[74] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #045",
+		target	=	"Новый юнит #081",
+		t	=	28829.975,
+		initiatorMissionID	=	"59",
+		targetMissionID	=	"95",
+	}, -- end of [74]
+	[75] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28830.111,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [75]
+	[76] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28830.479,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [76]
+	[77] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #045",
+		t	=	28830.571,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"59",
+	}, -- end of [77]
+	[78] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #081",
+		target	=	"Новый юнит #006",
+		t	=	28832.069,
+		initiatorMissionID	=	"95",
+		targetMissionID	=	"13",
+	}, -- end of [78]
+	[79] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28832.098,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [79]
+	[80] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #081",
+		t	=	28832.271,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"95",
+	}, -- end of [80]
+	[81] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28832.675,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [81]
+	[82] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28832.675,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [82]
+	[83] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28832.871,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [83]
+	[84] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28832.983,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [84]
+	[85] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28833.774,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [85]
+	[86] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28834.2,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [86]
+	[87] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28834.2,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [87]
+	[88] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28834.284,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [88]
+	[89] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28834.814,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [89]
+	[90] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28834.814,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [90]
+	[91] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28834.852,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [91]
+	[92] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28834.852,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [92]
+	[93] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28835.003,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [93]
+	[94] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #081",
+		t	=	28835.076,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"95",
+	}, -- end of [94]
+	[95] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #022",
+		t	=	28835.157,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"29",
+	}, -- end of [95]
+	[96] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28835.191,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [96]
+	[97] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28835.801,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [97]
+	[98] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28836.213,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [98]
+	[99] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28836.401,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [99]
+	[100] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28836.401,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [100]
+	[101] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28837.915,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [101]
+	[102] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28838.176,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [102]
+	[103] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28838.772,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [103]
+	[104] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28838.812,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [104]
+	[105] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28840.71,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [105]
+	[106] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28840.874,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [106]
+	[107] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #002",
+		t	=	28840.943,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"9",
+	}, -- end of [107]
+	[108] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28841.207,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [108]
+	[109] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #082",
+		t	=	28841.498,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"96",
+	}, -- end of [109]
+	[110] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28841.601,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [110]
+	[111] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28841.766,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [111]
+	[112] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28844.316,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [112]
+	[113] = 
+	{
+		type	=	"dead",
+		t	=	28844.518,
+		initiatorMissionID	=	"56",
+		initiator	=	"Новый юнит #042",
+	}, -- end of [113]
+	[114] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28844.923,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [114]
+	[115] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #029",
+		t	=	28846.561,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"43",
+	}, -- end of [115]
+	[116] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28847.455,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [116]
+	[117] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #029",
+		t	=	28847.753,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"43",
+	}, -- end of [117]
+	[118] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28847.762,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [118]
+	[119] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28847.78,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [119]
+	[120] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #029",
+		t	=	28848.076,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"43",
+	}, -- end of [120]
+	[121] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28848.119,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [121]
+	[122] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #029",
+		t	=	28848.358,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"43",
+	}, -- end of [122]
+	[123] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28848.505,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [123]
+	[124] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28848.505,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [124]
+	[125] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28848.684,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [125]
+	[126] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28849.005,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [126]
+	[127] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28850.173,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [127]
+	[128] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28850.593,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [128]
+	[129] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #033",
+		t	=	28850.593,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"47",
+	}, -- end of [129]
+	[130] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28851.074,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [130]
+	[131] = 
+	{
+		type	=	"dead",
+		t	=	28851.474,
+		initiatorMissionID	=	"96",
+		initiator	=	"Новый юнит #082",
+	}, -- end of [131]
+	[132] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28851.647,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [132]
+	[133] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28852.545,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [133]
+	[134] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28852.778,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [134]
+	[135] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28853.372,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [135]
+	[136] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28853.513,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [136]
+	[137] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28853.513,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [137]
+	[138] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28854.161,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [138]
+	[139] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28854.161,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [139]
+	[140] = 
+	{
+		type	=	"dead",
+		t	=	28854.653,
+		initiatorMissionID	=	"95",
+		initiator	=	"Новый юнит #081",
+	}, -- end of [140]
+	[141] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28856.121,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [141]
+	[142] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28856.707,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [142]
+	[143] = 
+	{
+		type	=	"dead",
+		t	=	28859.757,
+		initiatorMissionID	=	"29",
+		initiator	=	"Новый юнит #022",
+	}, -- end of [143]
+	[144] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28860.215,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [144]
+	[145] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28860.979,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [145]
+	[146] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28861.128,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [146]
+	[147] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28861.566,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [147]
+	[148] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28861.831,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [148]
+	[149] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28861.831,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [149]
+	[150] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #015",
+		t	=	28864.017,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"22",
+	}, -- end of [150]
+	[151] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28864.257,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [151]
+	[152] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28864.853,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [152]
+	[153] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"KPVT",
+		initiator	=	"Новый юнит #030",
+		target	=	"Новый юнит #006",
+		t	=	28866.163,
+		initiatorMissionID	=	"44",
+		targetMissionID	=	"13",
+	}, -- end of [153]
+	[154] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #030",
+		t	=	28867.068,
+		weapon	=	"KPVT",
+		initiatorMissionID	=	"44",
+	}, -- end of [154]
+	[155] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28867.75,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [155]
+	[156] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #024",
+		t	=	28868.144,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"38",
+	}, -- end of [156]
+	[157] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28868.649,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [157]
+	[158] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28868.664,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [158]
+	[159] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28869.028,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [159]
+	[160] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28869.856,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [160]
+	[161] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28871.34,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [161]
+	[162] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28871.34,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [162]
+	[163] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28871.756,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [163]
+	[164] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28872.644,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [164]
+	[165] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28872.658,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [165]
+	[166] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28873.558,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [166]
+	[167] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #020",
+		t	=	28873.718,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"27",
+	}, -- end of [167]
+	[168] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28874.113,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [168]
+	[169] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28874.113,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [169]
+	[170] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28875.286,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [170]
+	[171] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #040",
+		t	=	28875.286,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"54",
+	}, -- end of [171]
+	[172] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28875.764,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [172]
+	[173] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28876.361,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [173]
+	[174] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28878.153,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [174]
+	[175] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28878.153,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [175]
+	[176] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28879.477,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [176]
+	[177] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28880.389,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [177]
+	[178] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28881.15,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [178]
+	[179] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #002",
+		t	=	28881.226,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"9",
+	}, -- end of [179]
+	[180] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28881.735,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [180]
+	[181] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28883.294,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [181]
+	[182] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28883.888,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [182]
+	[183] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28885.615,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [183]
+	[184] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28886.203,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [184]
+	[185] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #007",
+		t	=	28886.52,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"14",
+	}, -- end of [185]
+	[186] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28886.857,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [186]
+	[187] = 
+	{
+		type	=	"dead",
+		t	=	28886.953,
+		initiatorMissionID	=	"111",
+		initiator	=	"Новый юнит #097",
+	}, -- end of [187]
+	[188] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28887.451,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [188]
+	[189] = 
+	{
+		type	=	"dead",
+		t	=	28888.082,
+		initiatorMissionID	=	"43",
+		initiator	=	"Новый юнит #029",
+	}, -- end of [189]
+	[190] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #054",
+		target	=	"Новый юнит #040",
+		t	=	28889.08,
+		initiatorMissionID	=	"68",
+		targetMissionID	=	"54",
+	}, -- end of [190]
+	[191] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #019",
+		t	=	28889.327,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"26",
+	}, -- end of [191]
+	[192] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28889.572,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [192]
+	[193] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #054",
+		t	=	28889.994,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"68",
+	}, -- end of [193]
+	[194] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28890.171,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [194]
+	[195] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28890.376,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [195]
+	[196] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #054",
+		target	=	"Новый юнит #040",
+		t	=	28890.764,
+		initiatorMissionID	=	"68",
+		targetMissionID	=	"54",
+	}, -- end of [196]
+	[197] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #054",
+		target	=	"Новый юнит #040",
+		t	=	28890.764,
+		initiatorMissionID	=	"68",
+		targetMissionID	=	"54",
+	}, -- end of [197]
+	[198] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28891.27,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [198]
+	[199] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #020",
+		t	=	28892.697,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"27",
+	}, -- end of [199]
+	[200] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28892.749,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [200]
+	[201] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28893.369,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [201]
+	[202] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28893.369,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [202]
+	[203] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28893.79,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [203]
+	[204] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28893.964,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [204]
+	[205] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28893.99,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [205]
+	[206] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28893.99,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [206]
+	[207] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28894.304,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [207]
+	[208] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #030",
+		t	=	28894.304,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"44",
+	}, -- end of [208]
+	[209] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28894.331,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [209]
+	[210] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28894.398,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [210]
+	[211] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28894.53,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [211]
+	[212] = 
+	{
+		type	=	"hit",
+		weapon	=	"Fixed QF95 206R",
+		initiator	=	"Новый юнит #020",
+		target	=	"Новый юнит #023",
+		t	=	28894.63,
+		initiatorMissionID	=	"27",
+		targetMissionID	=	"37",
+	}, -- end of [212]
+	[213] = 
+	{
+		type	=	"dead",
+		t	=	28894.63,
+		initiatorMissionID	=	"37",
+		initiator	=	"Новый юнит #023",
+	}, -- end of [213]
+	[214] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28895.115,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [214]
+	[215] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28895.115,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [215]
+	[216] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28895.238,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [216]
+	[217] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28895.444,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [217]
+	[218] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28895.725,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [218]
+	[219] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28895.725,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [219]
+	[220] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #002",
+		t	=	28896.412,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"9",
+	}, -- end of [220]
+	[221] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28896.446,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [221]
+	[222] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #043",
+		t	=	28896.724,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"57",
+	}, -- end of [222]
+	[223] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28896.84,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [223]
+	[224] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28897.655,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [224]
+	[225] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28897.729,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [225]
+	[226] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28898.046,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [226]
+	[227] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28898.622,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [227]
+	[228] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28898.705,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [228]
+	[229] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28899.32,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [229]
+	[230] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28899.335,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [230]
+	[231] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28899.734,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [231]
+	[232] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28899.734,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [232]
+	[233] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28900.032,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [233]
+	[234] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28900.032,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [234]
+	[235] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28900.221,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [235]
+	[236] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #092",
+		t	=	28900.32,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"106",
+	}, -- end of [236]
+	[237] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28901.201,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [237]
+	[238] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28901.201,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [238]
+	[239] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28902.211,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [239]
+	[240] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28902.314,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [240]
+	[241] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28902.406,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [241]
+	[242] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28902.826,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [242]
+	[243] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28903.211,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [243]
+	[244] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28903.307,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [244]
+	[245] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28903.63,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [245]
+	[246] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28904.525,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [246]
+	[247] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28904.859,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [247]
+	[248] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #007",
+		t	=	28905.153,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"14",
+	}, -- end of [248]
+	[249] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28905.166,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [249]
+	[250] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #024",
+		t	=	28906.023,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"38",
+	}, -- end of [250]
+	[251] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28906.132,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [251]
+	[252] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28906.722,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [252]
+	[253] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28906.82,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [253]
+	[254] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28906.927,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [254]
+	[255] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28907.416,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [255]
+	[256] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #024",
+		t	=	28907.489,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"38",
+	}, -- end of [256]
+	[257] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28908.408,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [257]
+	[258] = 
+	{
+		type	=	"dead",
+		t	=	28908.481,
+		initiatorMissionID	=	"47",
+		initiator	=	"Новый юнит #033",
+	}, -- end of [258]
+	[259] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28908.842,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [259]
+	[260] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28909.028,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [260]
+	[261] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28909.434,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [261]
+	[262] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28909.443,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [262]
+	[263] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28910.02,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [263]
+	[264] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28910.439,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [264]
+	[265] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #004",
+		t	=	28910.471,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"11",
+	}, -- end of [265]
+	[266] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #024",
+		t	=	28910.499,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"38",
+	}, -- end of [266]
+	[267] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28910.638,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [267]
+	[268] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28910.915,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [268]
+	[269] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28911.043,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [269]
+	[270] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #020",
+		t	=	28911.2,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"27",
+	}, -- end of [270]
+	[271] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28911.206,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [271]
+	[272] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #024",
+		t	=	28911.235,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"38",
+	}, -- end of [272]
+	[273] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #050",
+		target	=	"Новый юнит #024",
+		t	=	28911.235,
+		initiatorMissionID	=	"64",
+		targetMissionID	=	"38",
+	}, -- end of [273]
+	[274] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #050",
+		t	=	28911.389,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"64",
+	}, -- end of [274]
+	[275] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28912.108,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [275]
+	[276] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28912.543,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [276]
+	[277] = 
+	{
+		type	=	"dead",
+		t	=	28912.759,
+		initiatorMissionID	=	"44",
+		initiator	=	"Новый юнит #030",
+	}, -- end of [277]
+	[278] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28913.161,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [278]
+	[279] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28913.161,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [279]
+	[280] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28913.248,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [280]
+	[281] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28913.248,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [281]
+	[282] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28913.451,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [282]
+	[283] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28913.454,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [283]
+	[284] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #034",
+		t	=	28913.454,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"48",
+	}, -- end of [284]
+	[285] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28913.848,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [285]
+	[286] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28914.445,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [286]
+	[287] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28915.312,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [287]
+	[288] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28916.211,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [288]
+	[289] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28917.419,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [289]
+	[290] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28917.639,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [290]
+	[291] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28917.851,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [291]
+	[292] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28918.014,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [292]
+	[293] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28918.451,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [293]
+	[294] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28918.459,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [294]
+	[295] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28919.053,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [295]
+	[296] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28919.14,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [296]
+	[297] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #084",
+		t	=	28919.14,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"98",
+	}, -- end of [297]
+	[298] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28919.454,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [298]
+	[299] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #007",
+		t	=	28919.502,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"14",
+	}, -- end of [299]
+	[300] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #021",
+		t	=	28919.647,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"28",
+	}, -- end of [300]
+	[301] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28920.351,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [301]
+	[302] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28921.319,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [302]
+	[303] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28922.219,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [303]
+	[304] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28922.919,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [304]
+	[305] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28923.344,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [305]
+	[306] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28923.511,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [306]
+	[307] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28923.934,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [307]
+	[308] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28925.313,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [308]
+	[309] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28926.206,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [309]
+	[310] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #001",
+		target	=	"Новый юнит #096",
+		t	=	28927.049,
+		initiatorMissionID	=	"8",
+		targetMissionID	=	"110",
+	}, -- end of [310]
+	[311] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28927.398,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [311]
+	[312] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #001",
+		t	=	28927.65,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"8",
+	}, -- end of [312]
+	[313] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #047",
+		t	=	28927.993,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"61",
+	}, -- end of [313]
+	[314] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #004",
+		t	=	28928.458,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"11",
+	}, -- end of [314]
+	[315] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #096",
+		t	=	28929.203,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"110",
+	}, -- end of [315]
+	[316] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28929.442,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [316]
+	[317] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28930.045,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [317]
+	[318] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #035",
+		t	=	28930.881,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"49",
+	}, -- end of [318]
+	[319] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #035",
+		t	=	28931.155,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"49",
+	}, -- end of [319]
+	[320] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #035",
+		t	=	28931.155,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"49",
+	}, -- end of [320]
+	[321] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #035",
+		t	=	28931.457,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"49",
+	}, -- end of [321]
+	[322] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #035",
+		t	=	28931.457,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"49",
+	}, -- end of [322]
+	[323] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28932.076,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [323]
+	[324] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #015",
+		t	=	28932.298,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"22",
+	}, -- end of [324]
+	[325] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28933.122,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [325]
+	[326] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	28933.238,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [326]
+	[327] = 
+	{
+		type	=	"hit",
+		weapon	=	"Fixed QF95 206R",
+		initiator	=	"Новый юнит #018",
+		target	=	"Новый юнит #025",
+		t	=	28933.254,
+		initiatorMissionID	=	"25",
+		targetMissionID	=	"39",
+	}, -- end of [327]
+	[328] = 
+	{
+		type	=	"dead",
+		t	=	28933.254,
+		initiatorMissionID	=	"39",
+		initiator	=	"Новый юнит #025",
+	}, -- end of [328]
+	[329] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28933.708,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [329]
+	[330] = 
+	{
+		type	=	"dead",
+		t	=	28934.706,
+		initiatorMissionID	=	"48",
+		initiator	=	"Новый юнит #034",
+	}, -- end of [330]
+	[331] = 
+	{
+		type	=	"dead",
+		t	=	28935.138,
+		initiatorMissionID	=	"110",
+		initiator	=	"Новый юнит #096",
+	}, -- end of [331]
+	[332] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28936.931,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [332]
+	[333] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28937.836,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [333]
+	[334] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28939.342,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [334]
+	[335] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #011",
+		t	=	28940.385,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"18",
+	}, -- end of [335]
+	[336] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28941.084,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [336]
+	[337] = 
+	{
+		type	=	"dead",
+		t	=	28941.822,
+		initiatorMissionID	=	"57",
+		initiator	=	"Новый юнит #043",
+	}, -- end of [337]
+	[338] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28941.999,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [338]
+	[339] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28945.343,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [339]
+	[340] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28945.948,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [340]
+	[341] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28947.124,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [341]
+	[342] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28947.124,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [342]
+	[343] = 
+	{
+		type	=	"dead",
+		t	=	28947.948,
+		initiatorMissionID	=	"54",
+		initiator	=	"Новый юнит #040",
+	}, -- end of [343]
+	[344] = 
+	{
+		type	=	"dead",
+		t	=	28947.969,
+		initiatorMissionID	=	"38",
+		initiator	=	"Новый юнит #024",
+	}, -- end of [344]
+	[345] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28949.302,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [345]
+	[346] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28949.912,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [346]
+	[347] = 
+	{
+		type	=	"dead",
+		t	=	28950.833,
+		initiatorMissionID	=	"98",
+		initiator	=	"Новый юнит #084",
+	}, -- end of [347]
+	[348] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #045",
+		t	=	28952.564,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"59",
+	}, -- end of [348]
+	[349] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28953.404,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [349]
+	[350] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #001",
+		t	=	28953.845,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"8",
+	}, -- end of [350]
+	[351] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #006",
+		t	=	28953.953,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"13",
+	}, -- end of [351]
+	[352] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28954.314,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [352]
+	[353] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28955.412,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [353]
+	[354] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #011",
+		t	=	28956.293,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"18",
+	}, -- end of [354]
+	[355] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28957.115,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [355]
+	[356] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28957.721,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [356]
+	[357] = 
+	{
+		type	=	"dead",
+		t	=	28958,
+		initiatorMissionID	=	"106",
+		initiator	=	"Новый юнит #092",
+	}, -- end of [357]
+	[358] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28960.462,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [358]
+	[359] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28961.378,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [359]
+	[360] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #001",
+		t	=	28961.491,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"8",
+	}, -- end of [360]
+	[361] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28962.741,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [361]
+	[362] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28966.063,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [362]
+	[363] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28966.67,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [363]
+	[364] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28967.432,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [364]
+	[365] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28968.34,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [365]
+	[366] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #045",
+		t	=	28969.449,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"59",
+	}, -- end of [366]
+	[367] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28969.639,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [367]
+	[368] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28970.238,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [368]
+	[369] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28971.064,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [369]
+	[370] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28971.657,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [370]
+	[371] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #010",
+		t	=	28973.213,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"17",
+	}, -- end of [371]
+	[372] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28973.338,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [372]
+	[373] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28974.241,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [373]
+	[374] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28974.549,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [374]
+	[375] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28975.456,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [375]
+	[376] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28977.013,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [376]
+	[377] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28977.444,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [377]
+	[378] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28977.907,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [378]
+	[379] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28978.047,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [379]
+	[380] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28978.349,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [380]
+	[381] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28978.938,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [381]
+	[382] = 
+	{
+		type	=	"dead",
+		t	=	28978.973,
+		initiatorMissionID	=	"49",
+		initiator	=	"Новый юнит #035",
+	}, -- end of [382]
+	[383] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #083",
+		t	=	28979.217,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"97",
+	}, -- end of [383]
+	[384] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28980.244,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [384]
+	[385] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #046",
+		t	=	28981.311,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"60",
+	}, -- end of [385]
+	[386] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28981.474,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [386]
+	[387] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28981.757,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [387]
+	[388] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28982.369,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [388]
+	[389] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28982.379,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [389]
+	[390] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28984.975,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [390]
+	[391] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #087",
+		t	=	28985.222,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"101",
+	}, -- end of [391]
+	[392] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28985.242,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [392]
+	[393] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28985.581,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [393]
+	[394] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	28985.825,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [394]
+	[395] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #015",
+		t	=	28986.12,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"22",
+	}, -- end of [395]
+	[396] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28986.139,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [396]
+	[397] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28989.041,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [397]
+	[398] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28989.433,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [398]
+	[399] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #003",
+		t	=	28989.758,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"10",
+	}, -- end of [399]
+	[400] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28989.942,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [400]
+	[401] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28990.033,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [401]
+	[402] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #010",
+		t	=	28991.212,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"17",
+	}, -- end of [402]
+	[403] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28992.893,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [403]
+	[404] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28992.941,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [404]
+	[405] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28993.488,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [405]
+	[406] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28993.553,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [406]
+	[407] = 
+	{
+		type	=	"dead",
+		t	=	28995.777,
+		initiatorMissionID	=	"97",
+		initiator	=	"Новый юнит #083",
+	}, -- end of [407]
+	[408] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28996.135,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [408]
+	[409] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #046",
+		t	=	28996.828,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"60",
+	}, -- end of [409]
+	[410] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	28996.957,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [410]
+	[411] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	28997.03,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [411]
+	[412] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	28997.859,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [412]
+	[413] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	28999.758,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [413]
+	[414] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #087",
+		t	=	29000.186,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"101",
+	}, -- end of [414]
+	[415] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29000.363,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [415]
+	[416] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	29001.057,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [416]
+	[417] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	29001.089,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [417]
+	[418] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	29001.97,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [418]
+	[419] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #002",
+		t	=	29002.748,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"9",
+	}, -- end of [419]
+	[420] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #085",
+		t	=	29003.006,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"99",
+	}, -- end of [420]
+	[421] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #085",
+		t	=	29003.698,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"99",
+	}, -- end of [421]
+	[422] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29003.918,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [422]
+	[423] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #003",
+		t	=	29006.511,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"10",
+	}, -- end of [423]
+	[424] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #014",
+		t	=	29008.521,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"21",
+	}, -- end of [424]
+	[425] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #053",
+		target	=	"Новый юнит #087",
+		t	=	29012.089,
+		initiatorMissionID	=	"67",
+		targetMissionID	=	"101",
+	}, -- end of [425]
+	[426] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #053",
+		t	=	29012.691,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"67",
+	}, -- end of [426]
+	[427] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #054",
+		t	=	29013.263,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"68",
+	}, -- end of [427]
+	[428] = 
+	{
+		type	=	"hit",
+		weapon	=	"BGM-71 TOW",
+		initiator	=	"Новый юнит #046",
+		target	=	"Новый юнит #087",
+		t	=	29013.928,
+		initiatorMissionID	=	"60",
+		targetMissionID	=	"101",
+	}, -- end of [428]
+	[429] = 
+	{
+		type	=	"dead",
+		t	=	29013.928,
+		initiatorMissionID	=	"101",
+		initiator	=	"Новый юнит #087",
+	}, -- end of [429]
+	[430] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #003",
+		t	=	29023.94,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"10",
+	}, -- end of [430]
+	[431] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #093",
+		t	=	29027.02,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"107",
+	}, -- end of [431]
+	[432] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #052",
+		t	=	29028.214,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"66",
+	}, -- end of [432]
+	[433] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #093",
+		t	=	29028.447,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"107",
+	}, -- end of [433]
+	[434] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #093",
+		t	=	29028.705,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"107",
+	}, -- end of [434]
+	[435] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм БП",
+		initiator	=	"Новый юнит #052",
+		target	=	"Новый юнит #093",
+		t	=	29029.016,
+		initiatorMissionID	=	"66",
+		targetMissionID	=	"107",
+	}, -- end of [435]
+	[436] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #014",
+		t	=	29035.613,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"21",
+	}, -- end of [436]
+	[437] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #015",
+		t	=	29040.783,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"22",
+	}, -- end of [437]
+	[438] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #047",
+		t	=	29043.274,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"61",
+	}, -- end of [438]
+	[439] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #051",
+		t	=	29044.628,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"65",
+	}, -- end of [439]
+	[440] = 
+	{
+		type	=	"dead",
+		t	=	29053.189,
+		initiatorMissionID	=	"99",
+		initiator	=	"Новый юнит #085",
+	}, -- end of [440]
+	[441] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #020",
+		t	=	29054.319,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"27",
+	}, -- end of [441]
+	[442] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #004",
+		t	=	29054.563,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"11",
+	}, -- end of [442]
+	[443] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #011",
+		t	=	29055.822,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"18",
+	}, -- end of [443]
+	[444] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #071",
+		target	=	"Новый юнит #079",
+		t	=	29056.879,
+		initiatorMissionID	=	"85",
+		targetMissionID	=	"93",
+	}, -- end of [444]
+	[445] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #071",
+		target	=	"Новый юнит #079",
+		t	=	29056.942,
+		initiatorMissionID	=	"85",
+		targetMissionID	=	"93",
+	}, -- end of [445]
+	[446] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #071",
+		target	=	"Новый юнит #079",
+		t	=	29056.942,
+		initiatorMissionID	=	"85",
+		targetMissionID	=	"93",
+	}, -- end of [446]
+	[447] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #071",
+		target	=	"Новый юнит #079",
+		t	=	29057.245,
+		initiatorMissionID	=	"85",
+		targetMissionID	=	"93",
+	}, -- end of [447]
+	[448] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #071",
+		target	=	"Новый юнит #079",
+		t	=	29057.245,
+		initiatorMissionID	=	"85",
+		targetMissionID	=	"93",
+	}, -- end of [448]
+	[449] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #071",
+		t	=	29058.08,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"85",
+	}, -- end of [449]
+	[450] = 
+	{
+		type	=	"hit",
+		weapon	=	"BGM-71 TOW",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #095",
+		t	=	29059.448,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"109",
+	}, -- end of [450]
+	[451] = 
+	{
+		type	=	"dead",
+		t	=	29059.448,
+		initiatorMissionID	=	"109",
+		initiator	=	"Новый юнит #095",
+	}, -- end of [451]
+	[452] = 
+	{
+		type	=	"dead",
+		t	=	29061.06,
+		initiatorMissionID	=	"107",
+		initiator	=	"Новый юнит #093",
+	}, -- end of [452]
+	[453] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	29062.727,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [453]
+	[454] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #019",
+		t	=	29063.943,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"26",
+	}, -- end of [454]
+	[455] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #047",
+		t	=	29064.411,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"61",
+	}, -- end of [455]
+	[456] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #020",
+		t	=	29070.766,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"27",
+	}, -- end of [456]
+	[457] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	29077.821,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [457]
+	[458] = 
+	{
+		type	=	"hit",
+		weapon	=	"BGM-71 TOW",
+		initiator	=	"Новый юнит #047",
+		target	=	"Новый юнит #086",
+		t	=	29080.611,
+		initiatorMissionID	=	"61",
+		targetMissionID	=	"100",
+	}, -- end of [458]
+	[459] = 
+	{
+		type	=	"dead",
+		t	=	29080.611,
+		initiatorMissionID	=	"100",
+		initiator	=	"Новый юнит #086",
+	}, -- end of [459]
+	[460] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #039",
+		t	=	29085.406,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"53",
+	}, -- end of [460]
+	[461] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #039",
+		t	=	29085.505,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"53",
+	}, -- end of [461]
+	[462] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #039",
+		t	=	29085.505,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"53",
+	}, -- end of [462]
+	[463] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #039",
+		t	=	29085.806,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"53",
+	}, -- end of [463]
+	[464] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #039",
+		t	=	29085.806,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"53",
+	}, -- end of [464]
+	[465] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #072",
+		t	=	29086.601,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"86",
+	}, -- end of [465]
+	[466] = 
+	{
+		type	=	"dead",
+		t	=	29101.298,
+		initiatorMissionID	=	"53",
+		initiator	=	"Новый юнит #039",
+	}, -- end of [466]
+	[467] = 
+	{
+		type	=	"dead",
+		t	=	29112.914,
+		initiatorMissionID	=	"93",
+		initiator	=	"Новый юнит #079",
+	}, -- end of [467]
+	[468] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #017",
+		t	=	29114.576,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"24",
+	}, -- end of [468]
+	[469] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #005",
+		t	=	29114.604,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"12",
+	}, -- end of [469]
+	[470] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #021",
+		t	=	29128.843,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"28",
+	}, -- end of [470]
+	[471] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #005",
+		t	=	29129.764,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"12",
+	}, -- end of [471]
+	[472] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #048",
+		t	=	29135.733,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"62",
+	}, -- end of [472]
+	[473] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #072",
+		t	=	29136.333,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"86",
+	}, -- end of [473]
+	[474] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	29140.431,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [474]
+	[475] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #048",
+		t	=	29145.556,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"62",
+	}, -- end of [475]
+	[476] = 
+	{
+		type	=	"hit",
+		weapon	=	"BGM-71 TOW",
+		initiator	=	"Новый юнит #072",
+		target	=	"Новый юнит #094",
+		t	=	29151.033,
+		initiatorMissionID	=	"86",
+		targetMissionID	=	"108",
+	}, -- end of [476]
+	[477] = 
+	{
+		type	=	"dead",
+		t	=	29151.033,
+		initiatorMissionID	=	"108",
+		initiator	=	"Новый юнит #094",
+	}, -- end of [477]
+	[478] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	29157.59,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [478]
+	[479] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #007",
+		t	=	29162.297,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"14",
+	}, -- end of [479]
+	[480] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #045",
+		t	=	29166.053,
+		weapon	=	"BGM-71 TOW",
+		initiatorMissionID	=	"59",
+	}, -- end of [480]
+	[481] = 
+	{
+		type	=	"shot",
+		initiator	=	"Новый юнит #018",
+		t	=	29175.94,
+		weapon	=	"Fixed QF95 206R",
+		initiatorMissionID	=	"25",
+	}, -- end of [481]
+	[482] = 
+	{
+		type	=	"hit",
+		weapon	=	"BGM-71 TOW",
+		initiator	=	"Новый юнит #045",
+		target	=	"Новый юнит #088",
+		t	=	29181.173,
+		initiatorMissionID	=	"59",
+		targetMissionID	=	"102",
+	}, -- end of [482]
+	[483] = 
+	{
+		type	=	"dead",
+		t	=	29181.173,
+		initiatorMissionID	=	"102",
+		initiator	=	"Новый юнит #088",
+	}, -- end of [483]
+	[484] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29213.027,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [484]
+	[485] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29213.619,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [485]
+	[486] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29214.885,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [486]
+	[487] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29214.885,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [487]
+	[488] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29235.28,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [488]
+	[489] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29235.891,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [489]
+	[490] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29237.316,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [490]
+	[491] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29244.452,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [491]
+	[492] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29245.349,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [492]
+	[493] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29246.58,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [493]
+	[494] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29249.048,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [494]
+	[495] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29249.65,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [495]
+	[496] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #051",
+		target	=	"Новый юнит #091",
+		t	=	29252.816,
+		initiatorMissionID	=	"65",
+		targetMissionID	=	"105",
+	}, -- end of [496]
+	[497] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #051",
+		t	=	29253.411,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"65",
+	}, -- end of [497]
+	[498] = 
+	{
+		type	=	"start shooting",
+		weapon	=	"M242_Bushmaster",
+		initiator	=	"Новый юнит #056",
+		target	=	"Новый юнит #032",
+		t	=	29266.015,
+		initiatorMissionID	=	"70",
+		targetMissionID	=	"46",
+	}, -- end of [498]
+	[499] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #056",
+		target	=	"Новый юнит #032",
+		t	=	29266.124,
+		initiatorMissionID	=	"70",
+		targetMissionID	=	"46",
+	}, -- end of [499]
+	[500] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #056",
+		target	=	"Новый юнит #032",
+		t	=	29266.124,
+		initiatorMissionID	=	"70",
+		targetMissionID	=	"46",
+	}, -- end of [500]
+	[501] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #056",
+		target	=	"Новый юнит #032",
+		t	=	29266.435,
+		initiatorMissionID	=	"70",
+		targetMissionID	=	"46",
+	}, -- end of [501]
+	[502] = 
+	{
+		type	=	"hit",
+		weapon	=	"25мм ОФ",
+		initiator	=	"Новый юнит #056",
+		target	=	"Новый юнит #032",
+		t	=	29266.435,
+		initiatorMissionID	=	"70",
+		targetMissionID	=	"46",
+	}, -- end of [502]
+	[503] = 
+	{
+		type	=	"end shooting",
+		initiator	=	"Новый юнит #056",
+		t	=	29266.904,
+		weapon	=	"M242_Bushmaster",
+		initiatorMissionID	=	"70",
+	}, -- end of [503]
+	[504] = 
+	{
+		type	=	"dead",
+		t	=	29290.029,
+		initiatorMissionID	=	"46",
+		initiator	=	"Новый юнит #032",
+	}, -- end of [504]
+	[505] = 
+	{
+		type	=	"mission end",
+		t	=	29327.706,
+	}, -- end of [505]
+} -- end of events
+callsign	=	"Новый позывной"
+triggers_state = 	{}
+result	=	0
+world_state = 
+{
+	[1] = 
+	{
+		y	=	603372.6875,
+		x	=	-403890.65625,
+		heading	=	-3.9894003868103,
+		unitId	=	8,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [1]
+	[2] = 
+	{
+		y	=	603431.5,
+		x	=	-404472.25,
+		heading	=	-3.989414691925,
+		unitId	=	9,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [2]
+	[3] = 
+	{
+		y	=	602238.5625,
+		x	=	-403986.8125,
+		heading	=	-3.8947484493256,
+		unitId	=	10,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [3]
+	[4] = 
+	{
+		y	=	602502.375,
+		x	=	-403601.21875,
+		heading	=	-3.9894008636475,
+		unitId	=	11,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [4]
+	[5] = 
+	{
+		y	=	602154.0625,
+		x	=	-403543.34375,
+		heading	=	-3.9894154071808,
+		unitId	=	12,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [5]
+	[6] = 
+	{
+		y	=	603431.625,
+		x	=	-403600.875,
+		heading	=	-3.9894154071808,
+		unitId	=	13,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [6]
+	[7] = 
+	{
+		y	=	603024.875,
+		x	=	-403600.8125,
+		heading	=	-3.9894151687622,
+		unitId	=	14,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [7]
+	[8] = 
+	{
+		y	=	602095.9375,
+		x	=	-403136.59375,
+		heading	=	-3.9894082546234,
+		unitId	=	15,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [8]
+	[9] = 
+	{
+		y	=	601979.4375,
+		x	=	-403601.1875,
+		heading	=	-3.9930593967438,
+		unitId	=	16,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [9]
+	[10] = 
+	{
+		y	=	602618.125,
+		x	=	-404181.84375,
+		heading	=	-3.9893996715546,
+		unitId	=	17,
+		speed	=	0.83624869585037,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [10]
+	[11] = 
+	{
+		y	=	603488.8125,
+		x	=	-403542.03125,
+		heading	=	-3.9894001483917,
+		unitId	=	18,
+		speed	=	1.2004554271698,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [11]
+	[12] = 
+	{
+		y	=	602908.625,
+		x	=	-403019.8125,
+		heading	=	-3.9894006252289,
+		unitId	=	19,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [12]
+	[13] = 
+	{
+		y	=	601997.9375,
+		x	=	-403573.03125,
+		heading	=	-3.9894003868103,
+		unitId	=	20,
+		speed	=	5.7541809082031,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [13]
+	[14] = 
+	{
+		y	=	602328.3125,
+		x	=	-404008.125,
+		heading	=	-3.9894003868103,
+		unitId	=	21,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [14]
+	[15] = 
+	{
+		y	=	603722,
+		x	=	-403542.65625,
+		heading	=	-3.9894156455994,
+		unitId	=	22,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [15]
+	[16] = 
+	{
+		y	=	602386.1875,
+		x	=	-403136.375,
+		heading	=	-3.9852514266968,
+		unitId	=	23,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [16]
+	[17] = 
+	{
+		y	=	602037.75,
+		x	=	-403717.5625,
+		heading	=	-3.9894092082977,
+		unitId	=	24,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [17]
+	[18] = 
+	{
+		y	=	602502.125,
+		x	=	-404356.25,
+		heading	=	-3.9894087314606,
+		unitId	=	25,
+		speed	=	0.68243199586868,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [18]
+	[19] = 
+	{
+		y	=	603248.1875,
+		x	=	-404343.96875,
+		heading	=	-4.2255644798279,
+		unitId	=	26,
+		speed	=	3.0677559375763,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [19]
+	[20] = 
+	{
+		y	=	603257.8125,
+		x	=	-404356.625,
+		heading	=	-3.9894092082977,
+		unitId	=	27,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [20]
+	[21] = 
+	{
+		y	=	602095.6875,
+		x	=	-403543.125,
+		heading	=	-3.9894001483917,
+		unitId	=	28,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [21]
+	[22] = 
+	{
+		y	=	602562.6875,
+		x	=	-404216.84375,
+		heading	=	-3.9894003868103,
+		unitId	=	59,
+		speed	=	5.6026697158813,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [22]
+	[23] = 
+	{
+		y	=	602495.1875,
+		x	=	-404200.28125,
+		heading	=	-3.9894001483917,
+		unitId	=	60,
+		speed	=	5.6026701927185,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [23]
+	[24] = 
+	{
+		y	=	602572.625,
+		x	=	-403466.34375,
+		heading	=	-3.9894154071808,
+		unitId	=	61,
+		speed	=	5.5720548629761,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [24]
+	[25] = 
+	{
+		y	=	601663.75,
+		x	=	-404108.875,
+		heading	=	-4.2083702087402,
+		unitId	=	62,
+		speed	=	5.5459351539612,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [25]
+	[26] = 
+	{
+		y	=	602086,
+		x	=	-405007.25,
+		heading	=	-3.9894154071808,
+		unitId	=	63,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [26]
+	[27] = 
+	{
+		y	=	603078.875,
+		x	=	-405437.875,
+		heading	=	-3.9894149303436,
+		unitId	=	64,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [27]
+	[28] = 
+	{
+		y	=	603915.875,
+		x	=	-405688.84375,
+		heading	=	-3.9894001483917,
+		unitId	=	65,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [28]
+	[29] = 
+	{
+		y	=	604693.75,
+		x	=	-405246.46875,
+		heading	=	-3.9894003868103,
+		unitId	=	66,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [29]
+	[30] = 
+	{
+		y	=	604466.25,
+		x	=	-404133.8125,
+		heading	=	-3.9894242286682,
+		unitId	=	67,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [30]
+	[31] = 
+	{
+		y	=	603234.125,
+		x	=	-402913.65625,
+		heading	=	-3.9894156455994,
+		unitId	=	68,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [31]
+	[32] = 
+	{
+		y	=	602205.625,
+		x	=	-402519.09375,
+		heading	=	-3.9894242286682,
+		unitId	=	69,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [32]
+	[33] = 
+	{
+		y	=	600578.75,
+		x	=	-403332.53125,
+		heading	=	-3.989408493042,
+		unitId	=	70,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [33]
+	[34] = 
+	{
+		y	=	600207.9375,
+		x	=	-403212.90625,
+		heading	=	-3.9894239902496,
+		unitId	=	71,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [34]
+	[35] = 
+	{
+		y	=	601894.3125,
+		x	=	-401394.4375,
+		heading	=	-3.9894006252289,
+		unitId	=	72,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [35]
+	[36] = 
+	{
+		y	=	602779.8125,
+		x	=	-401191.3125,
+		heading	=	-3.9894151687622,
+		unitId	=	73,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [36]
+	[37] = 
+	{
+		y	=	603641.0625,
+		x	=	-400999.90625,
+		heading	=	-3.9893999099731,
+		unitId	=	74,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [37]
+	[38] = 
+	{
+		y	=	603318.125,
+		x	=	-401310.90625,
+		heading	=	-3.9894235134125,
+		unitId	=	75,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [38]
+	[39] = 
+	{
+		y	=	600172.0625,
+		x	=	-402267.875,
+		heading	=	-3.9894154071808,
+		unitId	=	76,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [39]
+	[40] = 
+	{
+		y	=	600423.25,
+		x	=	-403212.875,
+		heading	=	-3.9894237518311,
+		unitId	=	77,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [40]
+	[41] = 
+	{
+		y	=	600674.4375,
+		x	=	-404349.3125,
+		heading	=	-3.9894089698792,
+		unitId	=	78,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [41]
+	[42] = 
+	{
+		y	=	600758.1875,
+		x	=	-404193.8125,
+		heading	=	-3.9894237518311,
+		unitId	=	79,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [42]
+	[43] = 
+	{
+		y	=	600710.1875,
+		x	=	-401717.5,
+		heading	=	-3.9894087314606,
+		unitId	=	80,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [43]
+	[44] = 
+	{
+		y	=	600997.4375,
+		x	=	-402327.71875,
+		heading	=	-3.9894154071808,
+		unitId	=	81,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [44]
+	[45] = 
+	{
+		y	=	601021.375,
+		x	=	-403260.71875,
+		heading	=	-3.9894237518311,
+		unitId	=	82,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [45]
+	[46] = 
+	{
+		y	=	601176.875,
+		x	=	-404815.84375,
+		heading	=	-3.9894237518311,
+		unitId	=	83,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [46]
+	[47] = 
+	{
+		y	=	600985.4375,
+		x	=	-404648.375,
+		heading	=	-3.9894087314606,
+		unitId	=	84,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [47]
+	[48] = 
+	{
+		y	=	600255.75,
+		x	=	-402255.9375,
+		heading	=	-3.989399433136,
+		unitId	=	85,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [48]
+	[49] = 
+	{
+		y	=	602217.3125,
+		x	=	-401693.5,
+		heading	=	-3.9894001483917,
+		unitId	=	86,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [49]
+	[50] = 
+	{
+		y	=	602887.4375,
+		x	=	-401550.15625,
+		heading	=	-3.9894087314606,
+		unitId	=	87,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [50]
+	[51] = 
+	{
+		y	=	603162.5625,
+		x	=	-401502.3125,
+		heading	=	-3.9894003868103,
+		unitId	=	88,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [51]
+	[52] = 
+	{
+		y	=	600901.625,
+		x	=	-401705.59375,
+		heading	=	-3.9894156455994,
+		unitId	=	89,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [52]
+	[53] = 
+	{
+		y	=	599777.25,
+		x	=	-402997.59375,
+		heading	=	-3.9894003868103,
+		unitId	=	90,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [53]
+	[54] = 
+	{
+		y	=	599789.25,
+		x	=	-403739.25,
+		heading	=	-3.9894154071808,
+		unitId	=	91,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [54]
+	[55] = 
+	{
+		y	=	600004.5625,
+		x	=	-403882.8125,
+		heading	=	-3.9894003868103,
+		unitId	=	92,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"M-2 Bradley",
+	}, -- end of [55]
+	[56] = 
+	{
+		y	=	600582.8125,
+		x	=	-402665.46875,
+		heading	=	-3.5471444129944,
+		unitId	=	40,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [56]
+	[57] = 
+	{
+		y	=	600516.9375,
+		x	=	-402631.96875,
+		heading	=	-3.54412150383,
+		unitId	=	41,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [57]
+	[58] = 
+	{
+		y	=	599778.25,
+		x	=	-402204.8125,
+		heading	=	-3.547219991684,
+		unitId	=	45,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [58]
+	[59] = 
+	{
+		y	=	600910.625,
+		x	=	-404403.875,
+		heading	=	-3.5426979064941,
+		unitId	=	50,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [59]
+	[60] = 
+	{
+		y	=	599942.5625,
+		x	=	-404157.96875,
+		heading	=	-3.5438129901886,
+		unitId	=	51,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [60]
+	[61] = 
+	{
+		y	=	599433.875,
+		x	=	-402861.5625,
+		heading	=	-3.5432147979736,
+		unitId	=	52,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [61]
+	[62] = 
+	{
+		y	=	599188,
+		x	=	-402517.6875,
+		heading	=	-3.5463919639587,
+		unitId	=	58,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [62]
+	[63] = 
+	{
+		y	=	600663.6875,
+		x	=	-401009.1875,
+		heading	=	-3.5488665103912,
+		unitId	=	94,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [63]
+	[64] = 
+	{
+		y	=	602625.6875,
+		x	=	-406189.40625,
+		heading	=	-3.5463922023773,
+		unitId	=	103,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [64]
+	[65] = 
+	{
+		y	=	601549.125,
+		x	=	-405806.65625,
+		heading	=	-3.546128988266,
+		unitId	=	104,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [65]
+	[66] = 
+	{
+		y	=	602027.3125,
+		x	=	-405064.34375,
+		heading	=	-3.5492308139801,
+		unitId	=	105,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [66]
+	[67] = 
+	{
+		y	=	599706.625,
+		x	=	-404095.3125,
+		heading	=	-3.5498292446136,
+		unitId	=	112,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [67]
+	[68] = 
+	{
+		y	=	599670.75,
+		x	=	-404442.3125,
+		heading	=	-3.5492105484009,
+		unitId	=	113,
+		speed	=	0,
+		coalition	=	"blue",
+		country	=	0,
+		type	=	"BTR-80",
+	}, -- end of [68]
+	[69] = 
+	{
+		y	=	602258.5,
+		x	=	-403268.65625,
+		heading	=	-3.9894001483917,
+		unitId	=	1,
+		speed	=	0,
+		coalition	=	"red",
+		country	=	2,
+		type	=	"Centaur_IV",
+	}, -- end of [69]
+} -- end of world_state

@@ -7,12 +7,22 @@ const EdQuery = {
         return window.edQuery({
           request: JSON.stringify(opts.request),
           persistent: opts.persistent || false,
-          onSuccess: opts.success,
-          onFailure: opts.failure
+          onSuccess: (res) => {
+            if (opts.success) opts.success(JSON.parse(res))
+          },
+          onFailure: (e) => {
+            if (opts.failure) {
+              opts.failure(e)
+            }
+          }
         })
       }
       // mockup for edQuery function
-      return edQueryLib(opts).catch(e => opts.failure(e))
+      return edQueryLib(opts).catch(e => {
+        if (opts.failure) {
+          opts.failure(e)
+        }
+      })
     }
   }
 }

@@ -1,15 +1,16 @@
 @import './fonts'
-
 @import './mixins.sass'
 @import './animations.sass'
 
 // variables
 $blue: #7EE6FF
+$dark-blue: #2F6186
 $orange: #FFC364
 $base: #2F6186
 $grid-columns: 16
 $grid-gutter-width: 20px
-$side-margin: 4.1625vw
+$side-margin: 48px
+$top-margin: 20px
 
 @import './lib/bootstrap/bootstrap-grid.scss'
 
@@ -23,6 +24,18 @@ html, body
   letter-spacing: .5px
   color: #ffffff
   overflow: hidden
+*::-webkit-scrollbar
+  box-shadow: none
+  -webkit-box-shadow: none
+  width: 6px
+  height: 6px
+  bottom: 6px
+*::-webkit-scrollbar-track
+  background: rgba(255, 255, 255, 0.05)
+*::-webkit-scrollbar-thumb
+  background: rgba(255, 255, 255, 0.15)
+*::-webkit-scrollbar-thumb:hover
+  background: rgba(255, 255, 255, 0.35)
 ul
   list-style: none
   padding: 0
@@ -31,14 +44,35 @@ a
   color: inherit
 p
   margin: 0
-h1
-  @include make-font('Roboto', 100)
-  font-size: calcsize(75)
-  white-space: nowrap
-  text-transform: uppercase
-  margin: 0
-  margin-left: calcsize(-80)
+.headers
+  position: relative
   padding-top: calcsize(210)
+  text-transform: uppercase
+  margin-left: -3.5vw
+  & h1, h2
+    @include make-font('Roboto', 100)
+    font-size: 2.5rem
+    white-space: nowrap
+    margin: 0
+    transition: all .5s
+  & h2
+    -webkit-transition: all 1s ease-in-out .3s
+  &__header
+    &--small
+      color: $blue
+      text-transform: capitalize
+      height: 2.5rem
+      position: relative
+      & h1
+        position: absolute
+        left: 4rem
+        transform: scale(0.35) translateY(-2rem)
+  &__subheader
+    & h2
+      opacity: 0
+    &--visible
+      & h2
+        opacity: 1
 #app
   height: 100%
   position: relative
@@ -49,18 +83,39 @@ h1
 .align-center
   align-items: center
 .router-back
+  position: fixed
   cursor: pointer
-  color: $blue
-  margin-top: 3.5vw
+  color: #7EE6FF
+  top: 35%
   & svg
     stroke: none
-  & h2
-    @include make-font('Roboto', 18)
-    font-size: calcsize(18)
-    text-transform: capitalize
+  //& h2
+  //  @include make-font('Roboto', 18)
+  //  font-size: calcsize(18)
+  //  text-transform: capitalize
   &:hover
     color: #ffffff
     & svg
       fill: #ffffff
 .svg-icon--common
   width: 50px
+.wrapper
+  position: absolute
+  width: 100%
+  height: calc( 100% - #{$top-margin} )
+
+
+@media screen and (max-aspect-ratio: 16/9)
+  .headers
+    & h1, h2
+      font-size: 3rem
+
+@media screen and (min-width: 1250px)
+  .headers
+    & h1, h2
+      font-size: 3.5rem
+
+@media screen and (min-width: 1600px)
+  .headers
+    & h1, h2
+      font-size: 4.75rem

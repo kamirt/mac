@@ -6,7 +6,7 @@ export default {
   mutations: {
     SET_VEHICLES (state, payload) {
       state.selected = payload.selected // <id> number
-      state.vehicles = payload.vehicles // <array> objects
+      state.vehicles = payload // <array> objects
     }
   }
 }

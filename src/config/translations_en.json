@@ -1,9 +1,16 @@
 {
   "globals": {
     "fly": "fly",
+    "briefing": "briefing",
     "controls": "controls",
     "special_options": "special options",
-    "search": "search"
+    "search": "search",
+    "exit": "exit",
+    "missions": "missions",
+    "debrief": "debrief"
+  },
+  "mission": {
+    "description": "description"
   },
   "missions": {
     "campaign": "campaign",
@@ -11,6 +18,10 @@
     "mission": "mission",
     "training": "training",
     "continue_current": "continue current campaign"
+  },
+  "multiplayer": {
+    "join": "join server",
+    "start": "start server"
   },
   "system_menu": {
     "news": "news",
@@ -20,10 +31,24 @@
     "shop": "shop"
   },
   "main_menu": {
-    "singleplayer": "singleplayer",
-    "multiplayer": "multiplayer",
-    "aircraft_settings": "aircraft settings",
-    "game_settings": "game settings",
-    "exit": "exit"
+    "singleplayer": {
+      "name": "singleplayer",
+      "children": {
+        "missions": "missions",
+        "debrief": "debrief"
+      }
+    },
+    "multiplayer": {
+      "name": "multiplayer",
+      "children": {}
+    },
+    "aircraft_settings": {
+      "name": "aircraft settings",
+      "children": {}
+    },
+    "game_settings": {
+      "name": "game settings",
+      "children": {}
+    }
   }
 }

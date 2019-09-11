@@ -7,7 +7,8 @@
         li(v-for="(item, key) in Object.keys(content)",
            :key="key",
            class="main-menu__item")
-          router-link(:to="item") {{ content[item] }}
+          router-link(:to="{'name': content[item] }") {{ content[item] }}
+        li(class="main-menu__item", @click="exit") {{ $content.globals.exit }}
 </template>
 
 <script>
@@ -28,10 +29,15 @@ export default {
   methods: {
     toggleMenu () {
       this.hidden = !this.hidden
+    },
+    exit () {
+      // ask API for vehicle list
+      this.$edQuery({
+        request: {
+          method: 'exit'
+        }
+      })
     }
-  },
-  beforeRouteUpdate (to, from, next) {
-    console.log(to, from)
   }
 }
 </script>
@@ -43,7 +49,7 @@ export default {
     position: absolute
     bottom: 5%
     text-transform: capitalize
-    font-size: calcsize(20)
+    font-size: 1rem
     z-index: 3
     height: 43%
     margin: 0
@@ -63,10 +69,16 @@ export default {
       left: -$side-margin
       z-index: 3
       cursor: pointer
+      & svg
+        fill: $blue!important
+        width: 30px
   .svg-icon--common
     &.svg-icon--hamburger
       width: 25px
       fill: $blue!important
       &:hover
         fill: white!important
+  @media (min-width: 1250px) and (max-width: 1400px)
+    .main-menu
+      //font-size: 1.3rem
 </style>

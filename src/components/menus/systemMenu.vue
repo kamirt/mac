@@ -35,7 +35,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$route)
+    // console.log(this.$route)
   }
 }
 </script>
@@ -53,7 +53,7 @@ export default {
     @include make-font('Roboto', 400)
     display: flex
     text-transform: uppercase
-    font-size: calcsize(16)
+    font-size: 1rem
     margin: 0
     width: 100%
     justify-content: space-between
@@ -97,4 +97,7 @@ export default {
     background: url("../../assets/img/backgrounds/mac_logo.svg") center/cover
     &:hover
       background: url("../../assets/img/backgrounds/mac_logo_white.svg") center/cover
+  @media (min-width: 1250px) and (max-width: 1400px)
+    .system-menu
+      //font-size: 1.3rem
 </style>

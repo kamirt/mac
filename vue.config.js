@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: './',
   css: {
     loaderOptions: {
       sass: {
@@ -48,5 +49,8 @@ module.exports = {
       .tap(options => {
         return options
       })
+  },
+  configureWebpack: {
+
   }
 }

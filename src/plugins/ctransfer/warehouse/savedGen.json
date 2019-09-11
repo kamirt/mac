@@ -1,0 +1,78 @@
+generator = 
+{
+    ["selectedInterceptParams"] = 
+    {
+    }, -- end of ["selectedInterceptParams"]
+    ["selectedMapPoint"] = 
+    {
+        ["id"] = "random",
+        ["name"] = "random",
+    }, -- end of ["selectedMapPoint"]
+    ["randomized"] = 
+    {
+    }, -- end of ["randomized"]
+    ["selectedSeason"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedSeason"]
+    ["selectedCountry"] = 
+    {
+        ["OldID"] = "random",
+    }, -- end of ["selectedCountry"]
+    ["selectedVehicle"] = 
+    {
+        ["modulId"] = "Su-25T by Eagle Dynamics",
+        ["name"] = "Су-25T",
+        ["id"] = "Su-25T",
+        ["optionsId"] = "Su-25T",
+        ["description"] = "Су-25Т является глубокой модернизацией штурмовика Су-25, круг выполняемых задач которого был расширен благодаря установке оптико-телевизионного прицельного комплекса и обновленнию состава радиоэлектронного оборудования. Прицельный комплекс самолета вкупе с мощным арсеналом управляемого вооружения, позволяет Су-25Т поражать обширный спектр целей, включая комплексы ПВО и корабли (до эсминца включительно).",
+    }, -- end of ["selectedVehicle"]
+    ["selectedWingmen"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedWingmen"]
+    ["selectedProfile"] = "random",
+    ["selectedBlueForces"] = 
+    {
+    }, -- end of ["selectedBlueForces"]
+    ["selectedSkill"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedSkill"]
+    ["selectedSkin"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedSkin"]
+    ["selectedRedForces"] = 
+    {
+    }, -- end of ["selectedRedForces"]
+    ["selectedAirdrome"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedAirdrome"]
+    ["info"] = 
+    {
+    }, -- end of ["info"]
+    ["selectedWeather"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedWeather"]
+    ["selectedLocation"] = 
+    {
+        ["id"] = "random",
+        ["name"] = "random",
+    }, -- end of ["selectedLocation"]
+    ["selectedPlace"] = 
+    {
+        ["pointType"] = "random",
+    }, -- end of ["selectedPlace"]
+    ["selectedStartTime"] = 
+    {
+        ["id"] = "random",
+    }, -- end of ["selectedStartTime"]
+    ["selectedTask"] = 
+    {
+        ["Name"] = "random",
+        ["OldID"] = "random",
+    }, -- end of ["selectedTask"]
+} -- end of generator

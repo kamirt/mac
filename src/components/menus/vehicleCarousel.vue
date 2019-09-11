@@ -2,36 +2,51 @@
   div(id="vehicles-carousel",
        @mousedown="handleMouseDown")
     div(class="carousel", ref="carousel",
-    :class="{ vertical: vertical }", :style="transform")
-      div(class="vehicle", v-for="(item, key) in vehicles",
+    :class="{ alternative: alternative }", :style="transform")
+      div(class="slide", v-for="(item, key) in vehicles",
         :key="item.id",
         :class="selectedVehicle == item.id ? 'selected' : ''",
         @mouseup="(e) => handleMouseUp(e, item)",
         @mouseenter="(e) => handleMouseEnter(e, item)")
-        div(v-visible="selectedVehicle == item.id && !vertical", class="vehicle__fly")
-          span {{ $content.globals.fly }}
-        transition(name="fade", appear, @after-enter="onAfterEnter")
-          div(class="vehicle__pic", :class="{ blocked: item.blocked, 'buy-only': item['buy_only'] }")
-            div(class="vehicle__overlay")
-              div(v-if="selectedVehicle == item.id", class="selected-child-arrow")
-                span {{ item.name }}
-            div(v-if="item['buy_only']", class="unlock")
-            img(:src="item.image", :class="hoveredVehicle == item.id ? 'full-opacity' : null")
-        div(v-if="!vertical",
-            class="vehicle__details"
-            :class="hoveredVehicle == item.id ? 'vehicle__details--hovered' : null")
-          div(v-visible="selectedVehicle != item.id",
-              class="vehicle__details--small") {{ item.name }}
-          p(class="vehicle__name") {{ selectedVehicle === item.id ? item.name : '&nbsp;' }}
-          p(class="vehicle__desc") {{ item.description }}
+        div(class="vehicle")
+          div(v-visible="selectedVehicle == item.id && !alternative", class="vehicle__fly")
+            span {{ $content.globals.fly }}
+          transition(name="fade", appear, @after-enter="onAfterEnter")
+            div(class="vehicle__pic", :class="{ blocked: item.blocked, 'buy-only': item['buy_only'] }")
+              div(class="vehicle__overlay")
+                div(v-if="selectedVehicle == item.id", class="selected-child-arrow")
+                  span {{ item.name }}
+              div(v-if="item['buy_only']", class="unlock")
+              img(:src="'./static/vehicles/' + item.name + '.png'", :class="hoveredVehicle == item.id ? 'full-opacity' : null")
+          div(v-if="!alternative",
+              class="vehicle__details"
+              :class="hoveredVehicle == item.id ? 'vehicle__details--hovered' : null")
+            div(v-visible="selectedVehicle != item.id",
+                class="vehicle__details--small") {{ item.name }}
+            p(class="vehicle__name") {{ selectedVehicle === item.id ? item.name : '&nbsp;' }}
+            p(class="vehicle__desc") {{ item.description }}
 </template>
 <script>
 import _ from 'lodash'
 export default {
   name: 'vehicle-menu',
   props: {
-    vertical: {
+    alternative: {
       type: Boolean
+    },
+    items: null,
+    perPage: {
+      type: Number,
+      default: 7
+    },
+    carouselHeight: {
+      type: Object,
+      default () {
+        return {
+          num: 20,
+          counter: '%'
+        }
+      }
     }
   },
   computed: {
@@ -39,7 +54,7 @@ export default {
       return `transform: translateX(${this.offset}px)`
     },
     vehicles () {
-      return this.$store.state.vehicles.vehicles
+      return this.items && this.items.length ? this.items : this.$store.state.vehicles.vehicles
     },
     selected () {
       return this.$store.state.vehicles.selected
@@ -67,22 +82,6 @@ export default {
       slideFunc
     }
   },
-  created () {
-    // ask API for vehicle list
-    this.$edQuery({
-      request: {
-        method: 'getVehicleList'
-      },
-      success: (e) => {
-        this.$store.commit('SET_VEHICLES', e.data)
-        this.selectedVehicle = this.selected
-      },
-      failure (error) {
-        console.log(error.message)
-      },
-      persistent: false
-    })
-  },
   beforeDestroy () {
     window.removeEventListener('keydown', this.slideOnes)
   },
@@ -97,10 +96,6 @@ export default {
     initCarousel (vEls) {
       this.carousel = this.$el.querySelector('.carousel')
       if (!vEls.length) console.error('wrong elements passed to carousel initialization function')
-      // vEls.forEach((el) => {
-      //   el.style.width = el.clientWidth + 'px'
-      //   el.style.height = el.clientHeight + 'px'
-      // })
       this.itemWidth = vEls[0].clientWidth
       this.totalWidth = this.carousel.clientWidth
       this.maxOffset = this.totalWidth - this.itemWidth * this.vehicles.length - 100
@@ -115,12 +110,16 @@ export default {
             this.timeoutScroll = true
           }, 100)
           if (e.wheelDelta > 0) {
-            this.slideFunc({ code: 'ArrowLeft' })
+            this.slideFunc({ key: 'ArrowLeft' })
             return
           }
-          this.slideFunc({ code: 'ArrowRight' })
+          this.slideFunc({ key: 'ArrowRight' })
         }
       })
+      // TODO: make this work right
+      if (this.vehicles && this.vehicles.length) {
+        this.handleClick({}, this.vehicles[0])
+      }
     },
     handleMove (e) {
       if (this.down) {
@@ -160,7 +159,7 @@ export default {
     },
     slideOnes (e) {
       let total
-      if (e.code === 'ArrowLeft') {
+      if (e.key === 'ArrowLeft') {
         total = this.offset + this.itemWidth
         if (total > 0) {
           total = 0
@@ -169,7 +168,7 @@ export default {
         this.offset = total
         this.dragged = total
       }
-      if (e.code === 'ArrowRight') {
+      if (e.key === 'ArrowRight') {
         total = this.offset - this.itemWidth
         if (total < this.maxOffset) {
           total = this.maxOffset
@@ -195,23 +194,29 @@ export default {
     padding-top: 0
     //padding-top: calcsize(100)
     transition: transform .3s
-    &.vertical
+    &.alternative
       padding: 0
       & .vehicle
-        padding: 10px 35px
+        padding: 10px 25px
         &__pic
-          width: calcsize(92)
-          height: calcsize(120)
-          align-items: flex-start
+          align-items: center
           background-size: 195%
           background-position: center
-          & img
-            margin-top: 10px
+          width: calcsize(175)
+          height: calcsize(100)
+        &__fly
+          margin: 0
       .selected-child-arrow
         & span
           display: block
+          top: -3rem
+          font-size: 2rem
         &:after
+          bottom: calc( 50% - 5px )
           display: block
+          border-top: 10px solid transparent
+          border-right: 10px solid $orange
+          border-bottom: 10px solid transparent
   .vehicle
     @include make-font('Roboto', normal)
     font-size: calcsize(32)

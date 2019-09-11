@@ -1,0 +1,18 @@
+{
+  "modules_options": {
+    "CPLocalList":"CPLocalList",
+    "armBending":"armBending",
+    "enable":"enable",
+    "aiHelper":"aiHelper",
+    "JoystickMode":"JoystickMode",
+    "SightCamera":"SightCamera",
+    "gunCamera":"gunCamera",
+    "landSeatAdjustF86":"landSeatAdjustF86",
+    "NoseWheelSteeringSimpleBehaviourF86":"NoseWheelSteeringSimpleBehaviourF86",
+    "CPLocalZAList":"CPLocalZAList",
+    "autoLeanToAimMiG15":"autoLeanToAimMiG15",
+    "CPLocalList_MiG-29A":"CPLocalList_MiG-29A",
+    "CPLocalList_MiG-29G":"CPLocalList_MiG-29G",
+    "CPLocalList_MiG-29S":"CPLocalList_MiG-29S",
+  }
+}

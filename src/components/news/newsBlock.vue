@@ -86,7 +86,7 @@ export default {
       color: $orange
       padding: 15px
     &__text
-      font-size: .79vw
+      font-size: 1rem
       font-weight: 300
       color: $blue
       display: flex
@@ -116,4 +116,7 @@ export default {
       height: 100%
   .svg-icon--news_hide
     fill: $blue!important
+  @media screen and (min-width: 1250px) and (max-width: 1600px)
+    .news-block__text
+      font-size: 1rem
 </style>

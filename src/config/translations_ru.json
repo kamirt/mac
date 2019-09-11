@@ -1,9 +1,16 @@
 {
   "globals": {
     "fly": "fly",
+    "briefing": "briefing",
     "controls": "controls",
     "special_options": "special options",
-    "search": "search"
+    "search": "search",
+    "exit": "exit",
+    "missions": "missions",
+    "debrief": "debrief"
+  },
+  "mission": {
+    "description": "description"
   },
   "missions": {
     "campaign": "campaign",
@@ -11,6 +18,10 @@
     "mission": "mission",
     "training": "training",
     "continue_current": "continue current campaign"
+  },
+  "multiplayer": {
+    "join": "join server",
+    "start": "start server"
   },
   "system_menu": {
     "news": "news",
@@ -23,7 +34,6 @@
     "singleplayer": "singleplayer",
     "multiplayer": "multiplayer",
     "aircraft_settings": "aircraft settings",
-    "game_settings": "game settings",
-    "exit": "exit"
+    "game_settings": "game settings"
   }
 }

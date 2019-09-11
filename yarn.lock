@@ -8993,6 +8993,11 @@ slice-ansi@2.0.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
+slick-carousel@^1.6.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -10071,10 +10076,10 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
-vue-carousel@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.17.0.tgz#aada1f63a99352ba9581fc70d60f6bb0e6eee24d"
-  integrity sha512-KdRm65ABQWYqIi/5JWJWi2lUIOl7+lNRJW47kplD+OheKrYA8PrCgPhCXODTwOny25DqoyT7z0ynX/TZ849xXw==
+vue-carousel@^0.18.0-alpha:
+  version "0.18.0-alpha"
+  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.18.0-alpha.tgz#4957ef61bf12d38c4c7db7f245073b1d6bb3233a"
+  integrity sha512-4sS4UuSYwZ4aOaA6YRCjS/FYRcxnJ4YVC7TV3osiZb8ncnuPnGK17OPMarvovKOa/hno3ohza4BaD7WTnxKgaA==
   dependencies:
     global "^4.3.2"
     regenerator-runtime "^0.12.1"
@@ -10148,10 +10153,25 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-router@^3.0.1:
+vue-plain-slider@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-plain-slider/-/vue-plain-slider-1.1.1.tgz#fef64c936ca2f900c6cdd4efba89f821aa5cab72"
+  integrity sha512-tSAYUal1BCQni9z3sTApp9rkhJMj1vn1Z6NOgs5wXxU9tEwtZgC79zDLp4GJjQVNOZJRm7QZUXJbqsHszcn6Mw==
+  dependencies:
+    vue "^2.5.20"
+    vue-router "^3.0.2"
+
+vue-router@^3.0.1, vue-router@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
   integrity sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
+
+vue-slick@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/vue-slick/-/vue-slick-1.1.15.tgz#2916134531fd1f9638548f2ba1526e4f11032588"
+  integrity sha512-FnoeFMmxj+3Y1iE1HjNsB0SPpcTxJ8y2FIgndwMP6WkQph3FkPQLdqz24MwH4RszCXXH8reoANV6DMIC07jEbQ==
+  dependencies:
+    slick-carousel "^1.6.0"
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
@@ -10174,10 +10194,10 @@ vue-template-es2015-compiler@^1.6.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.8.1.tgz#e2ec4f42d16b6c712e61899c6b20bcdb1df128ca"
   integrity sha512-mxBBMuSaPG9+NkVMbh28r8gvWQJ8UXxqDxVNeLy2KBUZiSNxZsagjYwLL8gjROb4oaaYtwRv3K8gAmw76I/U7Q==
 
-vue@^2.5.17:
-  version "2.6.6"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.6.tgz#dde41e483c11c46a7bf523909f4f2f816ab60d25"
-  integrity sha512-Y2DdOZD8sxApS+iUlwv1v8U1qN41kq6Kw45lM6nVZKhygeWA49q7VCCXkjXqeDBXgurrKWkYQ9cJeEJwAq0b9Q==
+vue@^2.5.17, vue@^2.5.20:
+  version "2.6.7"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.7.tgz#254f188e7621d2d19ee28d0c0442c6d21b53ae2d"
+  integrity sha512-g7ADfQ82QU+j6F/bVDioVQf2ccIMYLuR4E8ev+RsDBlmwRkhGO3HhgF4PF9vpwjdPpxyb1zzLur2nQ2oIMAMEg==
 
 vue@^2.5.21:
   version "2.5.22"
